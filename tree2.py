@@ -47,6 +47,15 @@ def get_vdisk_list(text):
     if len(words) != 2:
       continue
     words[1] = words[1].replace('"', '')
+    if words[1].lower() == 'true':
+      words[1] = True
+    elif words[1].lower() == 'false':
+      words[1] = False
+    else:
+      try:
+        words[1] = int(words[1])
+      except:
+        ...
     d[words[0]] = words[1]
   if d != {}:
     vdisk_list.append(d)
@@ -67,7 +76,7 @@ def get_stats_list(text):
         d['tier_usage_list'] = tier_usage_list
         stats_list.append(d)
       d = {
-        'vdisk_id':line.split(': ')[1]
+        'vdisk_id':int(line.split(': ')[1])
       }
       tier_usage_list = {}
       continue
@@ -80,6 +89,10 @@ def get_stats_list(text):
     words = line.split(': ')
     key = words[0].strip()
     value = words[1].strip().replace('"', '')
+    try:
+      value = int(value)
+    except:
+      ...
     if flag_tier_usage_list:
       tier_usage_list[key] = value
     else:
@@ -140,11 +153,11 @@ def get_tree_dict(vdisk_table, stats_table, vm_table):
       node['user_bytes'] = '??'
       node['inherited_user_bytes'] = '??'
     try:
-      node['user_bytes_friendly'] = '{:,}'.format(int(node['user_bytes']))
+      node['user_bytes_friendly'] = '{:,}'.format(node['user_bytes'])
     except:
       node['user_bytes_friendly'] = node['user_bytes']
     try:
-      node['inherited_user_bytes_friendly'] = '{:,}'.format(int(node['inherited_user_bytes']))
+      node['inherited_user_bytes_friendly'] = '{:,}'.format(node['inherited_user_bytes'])
     except:
       node['inherited_user_bytes_friendly'] = node['inherited_user_bytes']
 
@@ -170,11 +183,22 @@ def get_tree_dict(vdisk_table, stats_table, vm_table):
     # childs
     num_descendant = 0
     node['child_disks'] = {}
+    try:
+      user_bytes = int(node['user_bytes'])
+    except:
+      user_bytes = 0
     for child in childs_dict.get(vdisk_id, []):
       node['child_disks'][child] = {}
-      num_descendant += add_child_tree(child, node['child_disks'][child], depth+1)
+      (nd, ub) = add_child_tree(child, node['child_disks'][child], depth+1)
+      num_descendant += nd
+      user_bytes += ub
+
+    print(user_bytes)
     node['num_descendant'] = num_descendant
-    return num_descendant + 1
+    node['sum_user_bytes_descendant'] = user_bytes
+    node['sum_user_bytes_descendant_friendly'] = '{:,}'.format(user_bytes)
+
+    return (num_descendant + 1, user_bytes)
 
   for key, value in roots.items():
     add_child_tree(key, value, 1)

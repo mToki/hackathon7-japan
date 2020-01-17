@@ -1,0 +1,1297 @@
+{
+    "NFS:5:0:3463": {
+        "uuid": "78f8cc61-0188-4485-9ec5-d3dbd6a3e7cc",
+        "power_state": "off",
+        "name": "win10-milk26"
+    },
+    "NFS:5:0:3479": {
+        "uuid": "78f8cc61-0188-4485-9ec5-d3dbd6a3e7cc",
+        "power_state": "off",
+        "name": "win10-milk26"
+    },
+    "NFS:5:0:3132": {
+        "uuid": "79ea86f1-c4a4-4470-bbc3-af45a34ac23f",
+        "power_state": "off",
+        "name": "frame-backup-prod-v6822-426a7"
+    },
+    "NFS:5:0:3430": {
+        "uuid": "a484277d-4496-43db-aa81-1fccd41c3bad",
+        "power_state": "off",
+        "name": "win10-milk15"
+    },
+    "NFS:5:0:3402": {
+        "uuid": "a484277d-4496-43db-aa81-1fccd41c3bad",
+        "power_state": "off",
+        "name": "win10-milk15"
+    },
+    "NFS:5:0:3465": {
+        "uuid": "9c2cd24e-5346-474c-b17d-e835cb00f7c1",
+        "power_state": "off",
+        "name": "win10-milk27"
+    },
+    "NFS:5:0:3477": {
+        "uuid": "9c2cd24e-5346-474c-b17d-e835cb00f7c1",
+        "power_state": "off",
+        "name": "win10-milk27"
+    },
+    "NFS:3:0:6538": {
+        "uuid": "d9538b3c-541a-4406-b862-6da30e23d871",
+        "power_state": "off",
+        "name": "template-milk-xvm2"
+    },
+    "NFS:5:0:2790": {
+        "uuid": "06b934b1-8dbb-4035-bef3-a65bf40d0813",
+        "power_state": "off",
+        "name": "frame-instance-prod-v12032-s3110061"
+    },
+    "NFS:5:0:2347": {
+        "uuid": "60fba5d0-c9e2-422e-91e2-451688613904",
+        "power_state": "off",
+        "name": "frame-template-prod-v6865-66ff1_clone_20191021155937"
+    },
+    "NFS:5:0:3050": {
+        "uuid": "50eb4c20-1f49-4fc6-882f-b4bfc670e988",
+        "power_state": "on",
+        "name": "frame-instance-prod-v6866-s3119122"
+    },
+    "NFS:5:0:3483": {
+        "uuid": "7598aa21-0b6a-43df-8cbe-71989c6c6c47",
+        "power_state": "off",
+        "name": "win10-milk28"
+    },
+    "NFS:5:0:3467": {
+        "uuid": "7598aa21-0b6a-43df-8cbe-71989c6c6c47",
+        "power_state": "off",
+        "name": "win10-milk28"
+    },
+    "NFS:3:0:5999": {
+        "uuid": "9f6c6183-39b3-410b-a64f-ed05417b2e5a",
+        "power_state": "on",
+        "name": "karbon-1205-aee01a-k8s-master-0"
+    },
+    "NFS:12:0:411": {
+        "uuid": "9f6c6183-39b3-410b-a64f-ed05417b2e5a",
+        "power_state": "on",
+        "name": "karbon-1205-aee01a-k8s-master-0"
+    },
+    "NFS:3:0:6000": {
+        "uuid": "9f6c6183-39b3-410b-a64f-ed05417b2e5a",
+        "power_state": "on",
+        "name": "karbon-1205-aee01a-k8s-master-0"
+    },
+    "NFS:5:0:2742": {
+        "uuid": "f006af03-f17a-41e5-8e80-0efb6169c317",
+        "power_state": "off",
+        "name": "frame-backup-prod-v12032-3aace"
+    },
+    "NFS:5:0:3386": {
+        "uuid": "23b91441-90b4-4705-832f-40f2ecee4851",
+        "power_state": "off",
+        "name": "win10-milk08"
+    },
+    "NFS:5:0:3416": {
+        "uuid": "23b91441-90b4-4705-832f-40f2ecee4851",
+        "power_state": "off",
+        "name": "win10-milk08"
+    },
+    "NFS:5:0:2612": {
+        "uuid": "87ee9a7a-c284-4bd4-a696-6754aa3645d9",
+        "power_state": "off",
+        "name": "frame-backup-prod-v12032-86532"
+    },
+    "NFS:3:0:1888": {
+        "uuid": "f65be0a3-a287-4ecd-a71f-5d5e4c7a1809",
+        "power_state": "off",
+        "name": "APACHE-PHP1"
+    },
+    "NFS:5:0:602": {
+        "uuid": "2a8fd24d-e353-49b0-b5a8-5682dc894a2f",
+        "power_state": "off",
+        "name": "frame-template-prod-v6865-783e9"
+    },
+    "NFS:3:0:6230": {
+        "uuid": "1d532a98-fe78-42f5-a86c-32938d868615",
+        "power_state": "on",
+        "name": "karbon-smzk-k8s-26831e-k8s-worker-0"
+    },
+    "NFS:15:0:268": {
+        "uuid": "1d532a98-fe78-42f5-a86c-32938d868615",
+        "power_state": "on",
+        "name": "karbon-smzk-k8s-26831e-k8s-worker-0"
+    },
+    "NFS:3:0:6231": {
+        "uuid": "1d532a98-fe78-42f5-a86c-32938d868615",
+        "power_state": "on",
+        "name": "karbon-smzk-k8s-26831e-k8s-worker-0"
+    },
+    "NFS:8:0:356": {
+        "uuid": "4a8e6e35-de0f-4ac6-96c3-0407944838b6",
+        "power_state": "off",
+        "name": "smzk-ubuntu3"
+    },
+    "NFS:5:0:3455": {
+        "uuid": "e82e2e89-936e-4725-88ee-13e29606df15",
+        "power_state": "off",
+        "name": "win10-milk20"
+    },
+    "NFS:5:0:3446": {
+        "uuid": "e82e2e89-936e-4725-88ee-13e29606df15",
+        "power_state": "off",
+        "name": "win10-milk20"
+    },
+    "NFS:15:0:266": {
+        "uuid": "a600c3b9-2f55-447c-b7cc-455ce47d2d73",
+        "power_state": "on",
+        "name": "karbon-smzk-k8s-26831e-k8s-master-0"
+    },
+    "NFS:3:0:6228": {
+        "uuid": "a600c3b9-2f55-447c-b7cc-455ce47d2d73",
+        "power_state": "on",
+        "name": "karbon-smzk-k8s-26831e-k8s-master-0"
+    },
+    "NFS:3:0:6227": {
+        "uuid": "a600c3b9-2f55-447c-b7cc-455ce47d2d73",
+        "power_state": "on",
+        "name": "karbon-smzk-k8s-26831e-k8s-master-0"
+    },
+    "NFS:3:0:1631": {
+        "uuid": "52a93265-09e6-4b39-ac89-a30063449d51",
+        "power_state": "off",
+        "name": "APACHE-PHP0"
+    },
+    "NFS:2:0:675": {
+        "uuid": "f3cd95fb-25d7-4934-bd43-85374a43e26e",
+        "power_state": "off",
+        "name": "SG-Web-Prod1"
+    },
+    "NFS:3:0:5839": {
+        "uuid": "015f4f8c-d712-4deb-8ca9-874b2927ed87",
+        "power_state": "on",
+        "name": "Morita_HAPROXY-0-191106-063355"
+    },
+    "NFS:12:0:387": {
+        "uuid": "015f4f8c-d712-4deb-8ca9-874b2927ed87",
+        "power_state": "on",
+        "name": "Morita_HAPROXY-0-191106-063355"
+    },
+    "NFS:2:0:796": {
+        "uuid": "e748b2b8-3959-48cf-b69c-6a8fe73fb432",
+        "power_state": "off",
+        "name": "smzk-ubuntu2"
+    },
+    "NFS:5:0:3367": {
+        "uuid": "ab33087a-0c8b-4186-89d1-56cb88b77dda",
+        "power_state": "off",
+        "name": "win10-milk00"
+    },
+    "NFS:5:0:3378": {
+        "uuid": "ab33087a-0c8b-4186-89d1-56cb88b77dda",
+        "power_state": "off",
+        "name": "win10-milk00"
+    },
+    "NFS:2:0:1036": {
+        "uuid": "12c5e24c-6f49-4786-a019-6ca587f16fb4",
+        "power_state": "off",
+        "name": "takanori_centos"
+    },
+    "NFS:2:0:791": {
+        "uuid": "77160eaa-1d1e-4bd1-b2ec-5cb4b9859625",
+        "power_state": "off",
+        "name": "SG-Web-Dev1"
+    },
+    "NFS:4:0:558": {
+        "uuid": "f9d32d4c-bbff-46a8-bdff-d677471ff92e",
+        "power_state": "off",
+        "name": "AT"
+    },
+    "NFS:5:0:865": {
+        "uuid": "f9d32d4c-bbff-46a8-bdff-d677471ff92e",
+        "power_state": "off",
+        "name": "AT"
+    },
+    "NFS:3:0:5831": {
+        "uuid": "7415284d-7a2c-4c5b-8397-f1e8e8ee842b",
+        "power_state": "on",
+        "name": "Morita_APACHE_PHP-0-191106-063352"
+    },
+    "NFS:12:0:381": {
+        "uuid": "7415284d-7a2c-4c5b-8397-f1e8e8ee842b",
+        "power_state": "on",
+        "name": "Morita_APACHE_PHP-0-191106-063352"
+    },
+    "NFS:3:0:5832": {
+        "uuid": "7415284d-7a2c-4c5b-8397-f1e8e8ee842b",
+        "power_state": "on",
+        "name": "Morita_APACHE_PHP-0-191106-063352"
+    },
+    "NFS:3:0:5884": {
+        "uuid": "19da9fcf-c11f-49d9-8443-fbc1ab96a743",
+        "power_state": "off",
+        "name": "takanori_landslide_ts2"
+    },
+    "NFS:3:0:1629": {
+        "uuid": "e2c3a5a2-96a9-4af7-bfef-a6fb44856e6c",
+        "power_state": "off",
+        "name": "APACHE-PHP1"
+    },
+    "NFS:8:0:258": {
+        "uuid": "2ab2b2a7-7edb-4ffe-8be6-4a85f23d7c82",
+        "power_state": "on",
+        "name": "CCA1"
+    },
+    "NFS:4:0:462": {
+        "uuid": "2ab2b2a7-7edb-4ffe-8be6-4a85f23d7c82",
+        "power_state": "on",
+        "name": "CCA1"
+    },
+    "NFS:5:0:2660": {
+        "uuid": "6ad40cd9-e8b2-4827-897e-480db4f9a30f",
+        "power_state": "off",
+        "name": "frame-instance-prod-v12032-s3109342"
+    },
+    "NFS:5:0:1615": {
+        "uuid": "d805373b-a524-4f81-8396-8fb8df1b166a",
+        "power_state": "off",
+        "name": "frame-template-prod-v6865-66ff1_clone_20191019215018"
+    },
+    "NFS:2:0:524": {
+        "uuid": "5308a443-4e48-4f2c-a98b-2d04cafc2685",
+        "power_state": "off",
+        "name": "ERA-110"
+    },
+    "NFS:3:0:5996": {
+        "uuid": "52cbdf5c-8eeb-4e55-b7ab-b7c2d3a7c566",
+        "power_state": "on",
+        "name": "karbon-1205-04c508-etcd-0"
+    },
+    "NFS:3:0:5997": {
+        "uuid": "52cbdf5c-8eeb-4e55-b7ab-b7c2d3a7c566",
+        "power_state": "on",
+        "name": "karbon-1205-04c508-etcd-0"
+    },
+    "NFS:12:0:409": {
+        "uuid": "52cbdf5c-8eeb-4e55-b7ab-b7c2d3a7c566",
+        "power_state": "on",
+        "name": "karbon-1205-04c508-etcd-0"
+    },
+    "NFS:5:0:2774": {
+        "uuid": "06e0fc4b-7df5-40fe-b87f-ead7cff0cf5b",
+        "power_state": "off",
+        "name": "frame-backup-prod-v12032-a64c2"
+    },
+    "NFS:2:0:1077": {
+        "uuid": "cd373b34-cf7d-4ee7-953a-1d3442388181",
+        "power_state": "on",
+        "name": "FLOW-DEMO-TEMPLATE"
+    },
+    "NFS:5:0:1371": {
+        "uuid": "27850e27-a3dc-410c-925f-80e799dcbd4f",
+        "power_state": "off",
+        "name": "frame-template-prod-v6866-67857_clone_20191019031919"
+    },
+    "NFS:5:0:2644": {
+        "uuid": "50b97259-9930-4477-b61a-2779310b21ca",
+        "power_state": "off",
+        "name": "frame-backup-prod-v12032-57d74"
+    },
+    "NFS:5:0:814": {
+        "uuid": "c7db0472-28ad-4a7f-b612-e464c060b61e",
+        "power_state": "off",
+        "name": "frame-template-prod-v6865-66ff1"
+    },
+    "NFS:15:0:260": {
+        "uuid": "d7ce6803-e09f-49ec-a9e7-ff216232501f",
+        "power_state": "on",
+        "name": "frame-workload-proxy-679-69908"
+    },
+    "NFS:3:0:6042": {
+        "uuid": "d7ce6803-e09f-49ec-a9e7-ff216232501f",
+        "power_state": "on",
+        "name": "frame-workload-proxy-679-69908"
+    },
+    "NFS:3:0:6041": {
+        "uuid": "d7ce6803-e09f-49ec-a9e7-ff216232501f",
+        "power_state": "on",
+        "name": "frame-workload-proxy-679-69908"
+    },
+    "NFS:3:0:7665": {
+        "uuid": "8ca8c1ba-3bef-4d8f-b903-0401403b4101",
+        "power_state": "on",
+        "name": "karbon-demo02-c6d611-k8s-worker-0"
+    },
+    "NFS:15:0:383": {
+        "uuid": "8ca8c1ba-3bef-4d8f-b903-0401403b4101",
+        "power_state": "on",
+        "name": "karbon-demo02-c6d611-k8s-worker-0"
+    },
+    "NFS:3:0:7666": {
+        "uuid": "8ca8c1ba-3bef-4d8f-b903-0401403b4101",
+        "power_state": "on",
+        "name": "karbon-demo02-c6d611-k8s-worker-0"
+    },
+    "NFS:5:0:2185": {
+        "uuid": "bc56dc3c-0de0-47e6-948e-1e1cf4c1dd6c",
+        "power_state": "off",
+        "name": "frame-template-prod-v6865-66ff1_clone_20191021153505"
+    },
+    "NFS:3:0:6539": {
+        "uuid": "b247ed7a-f131-49fc-b277-eb3e7f7f85af",
+        "power_state": "off",
+        "name": "template-milk-xvm3"
+    },
+    "NFS:5:0:488": {
+        "uuid": "ac2b3c21-99a5-401a-992d-3a6b98fadfe8",
+        "power_state": "off",
+        "name": "frame-instance-prod-v6823-s2320814"
+    },
+    "NFS:5:0:2201": {
+        "uuid": "23d0225d-8731-4483-86b3-50816b91d11e",
+        "power_state": "off",
+        "name": "frame-template-prod-v6865-66ff1_clone_20191021153732"
+    },
+    "NFS:3:0:2367": {
+        "uuid": "eb3b90a0-d53c-453b-8ff6-b2be87262ea7",
+        "power_state": "off",
+        "name": "template-milk-xvm"
+    },
+    "NFS:3:0:5775": {
+        "uuid": "1a1d91aa-c5ac-4b27-98f6-b4c3de8a8971",
+        "power_state": "on",
+        "name": "frame-workload-proxy-1142-56210"
+    },
+    "NFS:12:0:363": {
+        "uuid": "1a1d91aa-c5ac-4b27-98f6-b4c3de8a8971",
+        "power_state": "on",
+        "name": "frame-workload-proxy-1142-56210"
+    },
+    "NFS:3:0:5774": {
+        "uuid": "1a1d91aa-c5ac-4b27-98f6-b4c3de8a8971",
+        "power_state": "on",
+        "name": "frame-workload-proxy-1142-56210"
+    },
+    "NFS:2:0:358": {
+        "uuid": "f134a340-b4cb-4327-a41d-dda4616f768e",
+        "power_state": "on",
+        "name": "w2k8-morita"
+    },
+    "NFS:5:0:3440": {
+        "uuid": "f64d0066-73a0-4098-8090-010d096c2417",
+        "power_state": "off",
+        "name": "win10-milk18"
+    },
+    "NFS:5:0:3437": {
+        "uuid": "f64d0066-73a0-4098-8090-010d096c2417",
+        "power_state": "off",
+        "name": "win10-milk18"
+    },
+    "NFS:3:0:5503": {
+        "uuid": "3f25299b-1b28-4674-bb0e-a9b9af951f22",
+        "power_state": "on",
+        "name": "frame-workload-proxy-675-43817"
+    },
+    "NFS:12:0:357": {
+        "uuid": "3f25299b-1b28-4674-bb0e-a9b9af951f22",
+        "power_state": "on",
+        "name": "frame-workload-proxy-675-43817"
+    },
+    "NFS:3:0:5502": {
+        "uuid": "3f25299b-1b28-4674-bb0e-a9b9af951f22",
+        "power_state": "on",
+        "name": "frame-workload-proxy-675-43817"
+    },
+    "NFS:5:0:1485": {
+        "uuid": "c2e4ce01-d040-4719-86de-56911cd612f6",
+        "power_state": "off",
+        "name": "frame-template-prod-v6865-66ff1_clone_20191019214027"
+    },
+    "NFS:3:0:7633": {
+        "uuid": "4c366535-4476-425a-ac3b-4f3bacf0126e",
+        "power_state": "on",
+        "name": "karbon-demo01-d05407-etcd-0"
+    },
+    "NFS:15:0:361": {
+        "uuid": "4c366535-4476-425a-ac3b-4f3bacf0126e",
+        "power_state": "on",
+        "name": "karbon-demo01-d05407-etcd-0"
+    },
+    "NFS:3:0:7632": {
+        "uuid": "4c366535-4476-425a-ac3b-4f3bacf0126e",
+        "power_state": "on",
+        "name": "karbon-demo01-d05407-etcd-0"
+    },
+    "NFS:15:0:375": {
+        "uuid": "88d8716c-11da-4b27-bba2-846825d77845",
+        "power_state": "on",
+        "name": "karbon-basic-demo01-f0cc25-k8s-master-0"
+    },
+    "NFS:3:0:7653": {
+        "uuid": "88d8716c-11da-4b27-bba2-846825d77845",
+        "power_state": "on",
+        "name": "karbon-basic-demo01-f0cc25-k8s-master-0"
+    },
+    "NFS:3:0:7654": {
+        "uuid": "88d8716c-11da-4b27-bba2-846825d77845",
+        "power_state": "on",
+        "name": "karbon-basic-demo01-f0cc25-k8s-master-0"
+    },
+    "NFS:7:0:274": {
+        "uuid": "2a87d1ba-9e3d-4a4b-8171-06ccdd7ad9cf",
+        "power_state": "on",
+        "name": "NTNX-POC11-FS1-1"
+    },
+    "NFS:7:0:267": {
+        "uuid": "2a87d1ba-9e3d-4a4b-8171-06ccdd7ad9cf",
+        "power_state": "on",
+        "name": "NTNX-POC11-FS1-1"
+    },
+    "NFS:7:0:271": {
+        "uuid": "2a87d1ba-9e3d-4a4b-8171-06ccdd7ad9cf",
+        "power_state": "on",
+        "name": "NTNX-POC11-FS1-1"
+    },
+    "NFS:7:0:263": {
+        "uuid": "2a87d1ba-9e3d-4a4b-8171-06ccdd7ad9cf",
+        "power_state": "on",
+        "name": "NTNX-POC11-FS1-1"
+    },
+    "NFS:5:0:3591": {
+        "uuid": "bb6c621e-2ad0-427c-9a4e-d8553b15e190",
+        "power_state": "off",
+        "name": "frame-instance-prod-v6822-s3150783"
+    },
+    "NFS:2:0:755": {
+        "uuid": "e00a8e95-12fa-451b-af4e-c2cde23acafc",
+        "power_state": "off",
+        "name": "SG-Client-Dev1"
+    },
+    "NFS:5:0:1907": {
+        "uuid": "b9476ab0-d3ca-4a0c-bc2a-2c564072ae90",
+        "power_state": "off",
+        "name": "frame-template-prod-v6865-66ff1_clone_20191019234614"
+    },
+    "NFS:5:0:1957": {
+        "uuid": "2752225e-a0db-45d0-9b72-e7e8926d5ff9",
+        "power_state": "off",
+        "name": "frame-template-prod-v6865-66ff1_clone_20191019235622"
+    },
+    "NFS:5:0:3373": {
+        "uuid": "2bb0a638-0d17-4bb1-a5c4-954745367640",
+        "power_state": "off",
+        "name": "win10-milk02"
+    },
+    "NFS:5:0:3406": {
+        "uuid": "2bb0a638-0d17-4bb1-a5c4-954745367640",
+        "power_state": "off",
+        "name": "win10-milk02"
+    },
+    "NFS:7:0:265": {
+        "uuid": "54386a64-dbe3-4973-8719-301142333bac",
+        "power_state": "on",
+        "name": "NTNX-POC11-FS1-2"
+    },
+    "NFS:7:0:272": {
+        "uuid": "54386a64-dbe3-4973-8719-301142333bac",
+        "power_state": "on",
+        "name": "NTNX-POC11-FS1-2"
+    },
+    "NFS:7:0:275": {
+        "uuid": "54386a64-dbe3-4973-8719-301142333bac",
+        "power_state": "on",
+        "name": "NTNX-POC11-FS1-2"
+    },
+    "NFS:7:0:277": {
+        "uuid": "54386a64-dbe3-4973-8719-301142333bac",
+        "power_state": "on",
+        "name": "NTNX-POC11-FS1-2"
+    },
+    "NFS:5:0:1859": {
+        "uuid": "30874468-9339-4fce-94b6-0eb1e724c884",
+        "power_state": "off",
+        "name": "frame-template-prod-v6866-67857_clone_20191019233046"
+    },
+    "NFS:2:0:1068": {
+        "uuid": "bb8d1db3-f101-4d9d-b37b-9c17b98bf484",
+        "power_state": "off",
+        "name": "takanori_centos2"
+    },
+    "NFS:5:0:3480": {
+        "uuid": "7fa9d136-8be9-4f58-8a4c-00215c6e04b4",
+        "power_state": "off",
+        "name": "win10-milk24"
+    },
+    "NFS:5:0:3460": {
+        "uuid": "7fa9d136-8be9-4f58-8a4c-00215c6e04b4",
+        "power_state": "off",
+        "name": "win10-milk24"
+    },
+    "NFS:2:0:875": {
+        "uuid": "59cdca08-6b93-4a06-8494-305f42a1b1c1",
+        "power_state": "on",
+        "name": "Win10_Test001_nkn"
+    },
+    "NFS:2:0:1031": {
+        "uuid": "382f7202-7967-4264-8051-4fb0e78bf33f",
+        "power_state": "on",
+        "name": "hogeo"
+    },
+    "NFS:3:0:5885": {
+        "uuid": "1f0b03a0-368c-48aa-8fa4-2efb09a79118",
+        "power_state": "off",
+        "name": "takanori_landslide_ts3"
+    },
+    "NFS:3:0:5517": {
+        "uuid": "16aec663-bdf3-4219-9869-8a524423a5b8",
+        "power_state": "on",
+        "name": "frame-workload-proxy-657-43818"
+    },
+    "NFS:3:0:5516": {
+        "uuid": "16aec663-bdf3-4219-9869-8a524423a5b8",
+        "power_state": "on",
+        "name": "frame-workload-proxy-657-43818"
+    },
+    "NFS:12:0:361": {
+        "uuid": "16aec663-bdf3-4219-9869-8a524423a5b8",
+        "power_state": "on",
+        "name": "frame-workload-proxy-657-43818"
+    },
+    "NFS:5:0:472": {
+        "uuid": "9b11202c-5a41-4449-b2b1-001b2cbbaa45",
+        "power_state": "off",
+        "name": "frame-instance-prod-v6822-s2320812"
+    },
+    "NFS:5:0:2299": {
+        "uuid": "14b2038d-dc22-4357-85df-7457a95eaa7d",
+        "power_state": "off",
+        "name": "frame-template-prod-v6865-66ff1_clone_20191021154913"
+    },
+    "NFS:2:0:705": {
+        "uuid": "2e66c087-47fc-459b-8bd0-13b94a38bc52",
+        "power_state": "off",
+        "name": "SG-Web-Prod2"
+    },
+    "NFS:2:0:511": {
+        "uuid": "21afd869-a93b-472b-8483-3507262eba75",
+        "power_state": "on",
+        "name": "Win10-smzk"
+    },
+    "NFS:4:0:564": {
+        "uuid": "21afd869-a93b-472b-8483-3507262eba75",
+        "power_state": "on",
+        "name": "Win10-smzk"
+    },
+    "NFS:2:0:723": {
+        "uuid": "20ef5338-3c09-4db5-87af-73f52a25fa51",
+        "power_state": "off",
+        "name": "SG-DB-Prod2"
+    },
+    "NFS:5:0:3427": {
+        "uuid": "548e0bb6-be77-4c96-b40d-ca0cde30ef61",
+        "power_state": "off",
+        "name": "win10-milk12"
+    },
+    "NFS:5:0:3395": {
+        "uuid": "548e0bb6-be77-4c96-b40d-ca0cde30ef61",
+        "power_state": "off",
+        "name": "win10-milk12"
+    },
+    "NFS:5:0:748": {
+        "uuid": "75cc96cf-47bb-4f45-a701-60f1bf26ca10",
+        "power_state": "off",
+        "name": "frame-template-prod-v6866-67857"
+    },
+    "NFS:2:0:990": {
+        "uuid": "ae9728de-2163-49b6-8dac-54ecaf3f3f94",
+        "power_state": "on",
+        "name": "DOCKER-HOST-MILK"
+    },
+    "NFS:2:0:1027": {
+        "uuid": "dc1abcc3-853c-44e5-bfdc-c1058e450a32",
+        "power_state": "on",
+        "name": "myvm"
+    },
+    "NFS:3:0:8032": {
+        "uuid": "9bf7aed8-8c28-4246-ba27-f3b9371a39f1",
+        "power_state": "on",
+        "name": "karbon-k8s-km-b6e337-k8s-worker-0"
+    },
+    "NFS:12:0:407": {
+        "uuid": "9bf7aed8-8c28-4246-ba27-f3b9371a39f1",
+        "power_state": "on",
+        "name": "karbon-k8s-km-b6e337-k8s-worker-0"
+    },
+    "NFS:3:0:5994": {
+        "uuid": "9bf7aed8-8c28-4246-ba27-f3b9371a39f1",
+        "power_state": "on",
+        "name": "karbon-k8s-km-b6e337-k8s-worker-0"
+    },
+    "NFS:5:0:3018": {
+        "uuid": "f020f613-a781-4d0e-a118-7239b97a7c46",
+        "power_state": "on",
+        "name": "frame-instance-prod-v6865-s3119085"
+    },
+    "NFS:4:0:415": {
+        "uuid": "ed5c310e-e446-49b9-9ca2-14e1ddfb18a2",
+        "power_state": "off",
+        "name": "frametemp-w10"
+    },
+    "NFS:5:0:403": {
+        "uuid": "ed5c310e-e446-49b9-9ca2-14e1ddfb18a2",
+        "power_state": "off",
+        "name": "frametemp-w10"
+    },
+    "NFS:5:0:764": {
+        "uuid": "195ed5d6-54a5-432b-8979-e012ce202f31",
+        "power_state": "off",
+        "name": "frame-instance-prod-v6866-s2325462"
+    },
+    "NFS:5:0:3383": {
+        "uuid": "b239a270-8890-4cd0-9d00-345d1fdb9c04",
+        "power_state": "off",
+        "name": "win10-milk07"
+    },
+    "NFS:5:0:3414": {
+        "uuid": "b239a270-8890-4cd0-9d00-345d1fdb9c04",
+        "power_state": "off",
+        "name": "win10-milk07"
+    },
+    "NFS:5:0:371": {
+        "uuid": "9246e95e-caeb-4c0f-991e-a91f0c1f1442",
+        "power_state": "on",
+        "name": "win10-morita"
+    },
+    "NFS:5:0:929": {
+        "uuid": "e04bfbd3-a756-4274-a7bf-44c648bb6d46",
+        "power_state": "on",
+        "name": "win10-temp"
+    },
+    "NFS:2:0:876": {
+        "uuid": "0a458a1f-be88-460b-af8b-2f3bf10c96f7",
+        "power_state": "on",
+        "name": "KUBE-CLIENT"
+    },
+    "NFS:2:0:457": {
+        "uuid": "804c750e-4254-445d-b694-614305dadf1b",
+        "power_state": "off",
+        "name": "Win10-yoshiabe"
+    },
+    "NFS:4:0:458": {
+        "uuid": "804c750e-4254-445d-b694-614305dadf1b",
+        "power_state": "off",
+        "name": "Win10-yoshiabe"
+    },
+    "NFS:4:0:460": {
+        "uuid": "804c750e-4254-445d-b694-614305dadf1b",
+        "power_state": "off",
+        "name": "Win10-yoshiabe"
+    },
+    "NFS:3:0:6023": {
+        "uuid": "91ca1b8d-00c7-40e4-8c5c-d0c9f4d066e7",
+        "power_state": "off",
+        "name": "smzk-ubuntu-1213"
+    },
+    "NFS:5:0:504": {
+        "uuid": "92cf0632-97c6-4b5b-a97f-09e6ad43cce0",
+        "power_state": "off",
+        "name": "frame-instance-prod-v6824-s2320816"
+    },
+    "NFS:5:0:3408": {
+        "uuid": "4e1c5136-84e1-416c-a97b-f8f83f98914e",
+        "power_state": "off",
+        "name": "win10-milk04"
+    },
+    "NFS:5:0:3379": {
+        "uuid": "4e1c5136-84e1-416c-a97b-f8f83f98914e",
+        "power_state": "off",
+        "name": "win10-milk04"
+    },
+    "NFS:3:0:1627": {
+        "uuid": "8ab7bca0-6501-4141-8be0-f5b0985676d1",
+        "power_state": "off",
+        "name": "HAPROXY"
+    },
+    "NFS:9:0:384": {
+        "uuid": "8ab7bca0-6501-4141-8be0-f5b0985676d1",
+        "power_state": "off",
+        "name": "HAPROXY"
+    },
+    "NFS:7:0:276": {
+        "uuid": "c192de94-b4eb-4975-abb6-936f72c8b64e",
+        "power_state": "on",
+        "name": "NTNX-POC11-FS1-3"
+    },
+    "NFS:7:0:264": {
+        "uuid": "c192de94-b4eb-4975-abb6-936f72c8b64e",
+        "power_state": "on",
+        "name": "NTNX-POC11-FS1-3"
+    },
+    "NFS:7:0:273": {
+        "uuid": "c192de94-b4eb-4975-abb6-936f72c8b64e",
+        "power_state": "on",
+        "name": "NTNX-POC11-FS1-3"
+    },
+    "NFS:7:0:270": {
+        "uuid": "c192de94-b4eb-4975-abb6-936f72c8b64e",
+        "power_state": "on",
+        "name": "NTNX-POC11-FS1-3"
+    },
+    "NFS:3:0:5650": {
+        "uuid": "2f42f219-52f9-4a47-9219-753f0b6fb58f",
+        "power_state": "off",
+        "name": "takanori_landslide_tas"
+    },
+    "NFS:5:0:419": {
+        "uuid": "e9d9bc5a-3d7f-47f9-be54-21cd3d3d726f",
+        "power_state": "on",
+        "name": "POC11-AD1"
+    },
+    "NFS:3:0:6017": {
+        "uuid": "94385249-0181-4132-90cc-1c9c36d78f4f",
+        "power_state": "off",
+        "name": "hello"
+    },
+    "NFS:2:0:1104": {
+        "uuid": "26d5d632-da6a-4737-87b7-2552b675f1b5",
+        "power_state": "on",
+        "name": "FLOW-DEMO-TOKYO"
+    },
+    "NFS:3:0:7651": {
+        "uuid": "02aadd82-92b3-45af-9314-c1582fd77b78",
+        "power_state": "on",
+        "name": "karbon-basic-demo01-e79867-etcd-0"
+    },
+    "NFS:3:0:7650": {
+        "uuid": "02aadd82-92b3-45af-9314-c1582fd77b78",
+        "power_state": "on",
+        "name": "karbon-basic-demo01-e79867-etcd-0"
+    },
+    "NFS:15:0:373": {
+        "uuid": "02aadd82-92b3-45af-9314-c1582fd77b78",
+        "power_state": "on",
+        "name": "karbon-basic-demo01-e79867-etcd-0"
+    },
+    "NFS:2:0:775": {
+        "uuid": "3bfbdd89-46ff-4f2f-bf3c-5ae1f161b78b",
+        "power_state": "off",
+        "name": "SG-DB-Dev1"
+    },
+    "NFS:3:0:5991": {
+        "uuid": "49354840-0b70-4c1b-b779-10507dd00aca",
+        "power_state": "on",
+        "name": "karbon-k8s-km-b6e337-k8s-master-0"
+    },
+    "NFS:3:0:8030": {
+        "uuid": "49354840-0b70-4c1b-b779-10507dd00aca",
+        "power_state": "on",
+        "name": "karbon-k8s-km-b6e337-k8s-master-0"
+    },
+    "NFS:12:0:405": {
+        "uuid": "49354840-0b70-4c1b-b779-10507dd00aca",
+        "power_state": "on",
+        "name": "karbon-k8s-km-b6e337-k8s-master-0"
+    },
+    "NFS:5:0:2708": {
+        "uuid": "b5b23cbd-468f-468a-a1a3-696d72649970",
+        "power_state": "off",
+        "name": "frame-instance-prod-v12032-s3110057"
+    },
+    "NFS:5:0:2692": {
+        "uuid": "5b63056b-85c8-4490-90ba-b4ed85ba42a7",
+        "power_state": "off",
+        "name": "frame-instance-prod-v12032-s3110048"
+    },
+    "NFS:5:0:3476": {
+        "uuid": "24498418-6972-4823-92b0-d07be9fc6e04",
+        "power_state": "off",
+        "name": "win10-milk23"
+    },
+    "NFS:5:0:3456": {
+        "uuid": "24498418-6972-4823-92b0-d07be9fc6e04",
+        "power_state": "off",
+        "name": "win10-milk23"
+    },
+    "NFS:5:0:3418": {
+        "uuid": "e2e5ea7b-2d6b-4d22-80ad-a070061033dc",
+        "power_state": "off",
+        "name": "win10-milk10"
+    },
+    "NFS:5:0:3392": {
+        "uuid": "e2e5ea7b-2d6b-4d22-80ad-a070061033dc",
+        "power_state": "off",
+        "name": "win10-milk10"
+    },
+    "NFS:3:0:5867": {
+        "uuid": "280dc004-4802-4aaa-920a-000a5049856f",
+        "power_state": "on",
+        "name": "tas2"
+    },
+    "NFS:5:0:2676": {
+        "uuid": "ec2033fb-330c-4df8-b49e-c9c4ec0f71ea",
+        "power_state": "off",
+        "name": "frame-instance-prod-v12032-s3109405"
+    },
+    "NFS:2:0:1120": {
+        "uuid": "978e4ae2-d85a-4718-bec2-44bf643fe21e",
+        "power_state": "on",
+        "name": "FLOW-DEMO-OSAKA"
+    },
+    "NFS:5:0:3575": {
+        "uuid": "1e13318b-2ae4-45e3-a80b-aad01deefa6e",
+        "power_state": "off",
+        "name": "frame-instance-prod-v6822-s3150770"
+    },
+    "NFS:5:0:3403": {
+        "uuid": "87272c00-f50f-467d-a858-28759604a8fe",
+        "power_state": "off",
+        "name": "win10-milk01"
+    },
+    "NFS:5:0:3372": {
+        "uuid": "87272c00-f50f-467d-a858-28759604a8fe",
+        "power_state": "off",
+        "name": "win10-milk01"
+    },
+    "NFS:5:0:3470": {
+        "uuid": "3c5c4533-4c5d-4775-b0b5-d89087beaea5",
+        "power_state": "off",
+        "name": "win10-milk29"
+    },
+    "NFS:5:0:3484": {
+        "uuid": "3c5c4533-4c5d-4775-b0b5-d89087beaea5",
+        "power_state": "off",
+        "name": "win10-milk29"
+    },
+    "NFS:5:0:3396": {
+        "uuid": "05e54eaa-a20b-4331-8ea9-a387cb52aa47",
+        "power_state": "off",
+        "name": "win10-milk14"
+    },
+    "NFS:5:0:3429": {
+        "uuid": "05e54eaa-a20b-4331-8ea9-a387cb52aa47",
+        "power_state": "off",
+        "name": "win10-milk14"
+    },
+    "NFS:5:0:3100": {
+        "uuid": "d2fe8074-ce27-46b0-8f4b-2a54dbf4ed33",
+        "power_state": "off",
+        "name": "frame-backup-prod-v6822-edbc6"
+    },
+    "NFS:3:0:6537": {
+        "uuid": "83c2ca37-2549-49c4-a714-ec429ebb6783",
+        "power_state": "off",
+        "name": "template-milk-xvm1"
+    },
+    "NFS:5:0:3457": {
+        "uuid": "839c43c9-9f90-4700-b20a-08943bd60d76",
+        "power_state": "off",
+        "name": "win10-milk21"
+    },
+    "NFS:5:0:3447": {
+        "uuid": "839c43c9-9f90-4700-b20a-08943bd60d76",
+        "power_state": "off",
+        "name": "win10-milk21"
+    },
+    "NFS:5:0:3401": {
+        "uuid": "e5690a7a-912c-4438-bb89-0f2c8c94db24",
+        "power_state": "off",
+        "name": "win10-milk03"
+    },
+    "NFS:5:0:3369": {
+        "uuid": "e5690a7a-912c-4438-bb89-0f2c8c94db24",
+        "power_state": "off",
+        "name": "win10-milk03"
+    },
+    "NFS:3:0:1625": {
+        "uuid": "738d74b6-6443-4bc9-9e94-42865245c182",
+        "power_state": "off",
+        "name": "MYSQL"
+    },
+    "NFS:5:0:367": {
+        "uuid": "61d787bd-a3db-4f6b-a34d-6d52c19dada6",
+        "power_state": "on",
+        "name": "PC"
+    },
+    "NFS:5:0:366": {
+        "uuid": "61d787bd-a3db-4f6b-a34d-6d52c19dada6",
+        "power_state": "on",
+        "name": "PC"
+    },
+    "NFS:5:0:368": {
+        "uuid": "61d787bd-a3db-4f6b-a34d-6d52c19dada6",
+        "power_state": "on",
+        "name": "PC"
+    },
+    "NFS:5:0:369": {
+        "uuid": "61d787bd-a3db-4f6b-a34d-6d52c19dada6",
+        "power_state": "on",
+        "name": "PC"
+    },
+    "NFS:5:0:364": {
+        "uuid": "61d787bd-a3db-4f6b-a34d-6d52c19dada6",
+        "power_state": "on",
+        "name": "PC"
+    },
+    "NFS:5:0:3434": {
+        "uuid": "13b3d440-f65e-49be-9ead-873618630330",
+        "power_state": "off",
+        "name": "win10-milk17"
+    },
+    "NFS:5:0:3438": {
+        "uuid": "13b3d440-f65e-49be-9ead-873618630330",
+        "power_state": "off",
+        "name": "win10-milk17"
+    },
+    "NFS:5:0:1517": {
+        "uuid": "18e0ba90-f310-456a-8964-db1410fe7aad",
+        "power_state": "off",
+        "name": "frame-template-prod-v6866-67857_clone_20191019214252"
+    },
+    "NFS:5:0:3034": {
+        "uuid": "db363b91-272d-4a2b-899b-0f393321d041",
+        "power_state": "on",
+        "name": "frame-instance-prod-v6865-s3119084"
+    },
+    "NFS:5:0:1989": {
+        "uuid": "6a384532-3f23-4700-8dfa-9ca58abb0d52",
+        "power_state": "off",
+        "name": "frame-template-prod-v6865-66ff1_clone_20191020000557"
+    },
+    "NFS:2:0:739": {
+        "uuid": "a725ec95-6b99-463b-9a08-b819fc05917f",
+        "power_state": "off",
+        "name": "SG-Client-Prod1"
+    },
+    "NFS:2:0:1007": {
+        "uuid": "9fa40bd3-0695-4e60-80b8-f2bdba22676f",
+        "power_state": "on",
+        "name": "KUBE-CLIENT01"
+    },
+    "NFS:5:0:3462": {
+        "uuid": "8355878b-d624-4044-a5c1-2b6a9c67c254",
+        "power_state": "off",
+        "name": "win10-milk25"
+    },
+    "NFS:5:0:3482": {
+        "uuid": "8355878b-d624-4044-a5c1-2b6a9c67c254",
+        "power_state": "off",
+        "name": "win10-milk25"
+    },
+    "NFS:5:0:3068": {
+        "uuid": "d0671b89-dd28-4602-92ca-36219478e4a1",
+        "power_state": "on",
+        "name": "frame-instance-prod-v6866-s3119123"
+    },
+    "NFS:4:0:819": {
+        "uuid": "786a70f5-ea14-4a59-87b2-6d156d45d49b",
+        "power_state": "on",
+        "name": "TK-win2k16"
+    },
+    "NFS:2:0:1018": {
+        "uuid": "786a70f5-ea14-4a59-87b2-6d156d45d49b",
+        "power_state": "on",
+        "name": "TK-win2k16"
+    },
+    "NFS:4:0:817": {
+        "uuid": "786a70f5-ea14-4a59-87b2-6d156d45d49b",
+        "power_state": "on",
+        "name": "TK-win2k16"
+    },
+    "NFS:5:0:3452": {
+        "uuid": "ae2805c5-8b43-49df-a7fd-3e5ec7aedef9",
+        "power_state": "off",
+        "name": "win10-milk22"
+    },
+    "NFS:5:0:3469": {
+        "uuid": "ae2805c5-8b43-49df-a7fd-3e5ec7aedef9",
+        "power_state": "off",
+        "name": "win10-milk22"
+    },
+    "NFS:5:0:3417": {
+        "uuid": "291d96bd-4913-4ecf-8ee1-8346ac193d95",
+        "power_state": "off",
+        "name": "win10-milk06"
+    },
+    "NFS:5:0:3384": {
+        "uuid": "291d96bd-4913-4ecf-8ee1-8346ac193d95",
+        "power_state": "off",
+        "name": "win10-milk06"
+    },
+    "NFS:5:0:3423": {
+        "uuid": "43c66c11-9306-4431-91eb-6e82b4480e49",
+        "power_state": "off",
+        "name": "win10-milk11"
+    },
+    "NFS:5:0:3394": {
+        "uuid": "43c66c11-9306-4431-91eb-6e82b4480e49",
+        "power_state": "off",
+        "name": "win10-milk11"
+    },
+    "NFS:5:0:387": {
+        "uuid": "31149ec6-760a-4a54-8d2f-27264791d48a",
+        "power_state": "off",
+        "name": "frametemp-w16"
+    },
+    "NFS:4:0:413": {
+        "uuid": "31149ec6-760a-4a54-8d2f-27264791d48a",
+        "power_state": "off",
+        "name": "frametemp-w16"
+    },
+    "NFS:5:0:3198": {
+        "uuid": "c31be407-d6ac-47cd-a725-5d9c266615c1",
+        "power_state": "on",
+        "name": "frame-instance-prod-v6865-s3125107"
+    },
+    "NFS:5:0:2888": {
+        "uuid": "e37ab983-cdde-47ce-a399-c6e796c44fb3",
+        "power_state": "off",
+        "name": "frame-backup-prod-v6822-4312a"
+    },
+    "NFS:15:0:264": {
+        "uuid": "6978e925-2618-4fbe-8fac-7d9ebd11f1c5",
+        "power_state": "on",
+        "name": "karbon-smzk-k8s-91ef56-etcd-0"
+    },
+    "NFS:3:0:6224": {
+        "uuid": "6978e925-2618-4fbe-8fac-7d9ebd11f1c5",
+        "power_state": "on",
+        "name": "karbon-smzk-k8s-91ef56-etcd-0"
+    },
+    "NFS:3:0:6225": {
+        "uuid": "6978e925-2618-4fbe-8fac-7d9ebd11f1c5",
+        "power_state": "on",
+        "name": "karbon-smzk-k8s-91ef56-etcd-0"
+    },
+    "NFS:3:0:5837": {
+        "uuid": "52113890-fdee-4e76-a519-4016abb8abe5",
+        "power_state": "on",
+        "name": "Morita_MYSQL-0-191106-063353"
+    },
+    "NFS:12:0:385": {
+        "uuid": "52113890-fdee-4e76-a519-4016abb8abe5",
+        "power_state": "on",
+        "name": "Morita_MYSQL-0-191106-063353"
+    },
+    "NFS:5:0:3543": {
+        "uuid": "1554199d-89f6-40ac-b4e0-a0e0a6bf87ca",
+        "power_state": "off",
+        "name": "frame-instance-prod-v6822-s3150702"
+    },
+    "NFS:5:0:1029": {
+        "uuid": "c6b19b9c-9d8b-49a3-90f7-f163a885ec40",
+        "power_state": "on",
+        "name": "win10-milk"
+    },
+    "NFS:5:0:2513": {
+        "uuid": "c6b19b9c-9d8b-49a3-90f7-f163a885ec40",
+        "power_state": "on",
+        "name": "win10-milk"
+    },
+    "NFS:3:0:5834": {
+        "uuid": "6e93ed58-afb8-45fe-8a57-b3a579776c91",
+        "power_state": "on",
+        "name": "Morita_APACHE_PHP-1-191106-063352"
+    },
+    "NFS:12:0:383": {
+        "uuid": "6e93ed58-afb8-45fe-8a57-b3a579776c91",
+        "power_state": "on",
+        "name": "Morita_APACHE_PHP-1-191106-063352"
+    },
+    "NFS:3:0:5835": {
+        "uuid": "6e93ed58-afb8-45fe-8a57-b3a579776c91",
+        "power_state": "on",
+        "name": "Morita_APACHE_PHP-1-191106-063352"
+    },
+    "NFS:5:0:1435": {
+        "uuid": "6c39fdaa-0828-41ed-b767-797791211f9f",
+        "power_state": "off",
+        "name": "frame-template-prod-v6866-67857_clone_20191019033650"
+    },
+    "NFS:5:0:3426": {
+        "uuid": "eba0fae5-156c-4624-8b71-a564b41fc481",
+        "power_state": "off",
+        "name": "win10-milk16"
+    },
+    "NFS:5:0:3432": {
+        "uuid": "eba0fae5-156c-4624-8b71-a564b41fc481",
+        "power_state": "off",
+        "name": "win10-milk16"
+    },
+    "NFS:5:0:682": {
+        "uuid": "273ac66f-f916-416a-95b6-51640feefd69",
+        "power_state": "off",
+        "name": "frame-template-prod-v6866-163ad"
+    },
+    "NFS:4:0:512": {
+        "uuid": "09e5df44-82ea-4c9e-b9dd-e5c612909be5",
+        "power_state": "on",
+        "name": "CCA-POC11"
+    },
+    "NFS:8:0:262": {
+        "uuid": "09e5df44-82ea-4c9e-b9dd-e5c612909be5",
+        "power_state": "on",
+        "name": "CCA-POC11"
+    },
+    "NFS:3:0:7660": {
+        "uuid": "f94af8a6-2584-4321-9bfa-b7b3e4c5f582",
+        "power_state": "on",
+        "name": "karbon-demo02-e06655-etcd-0"
+    },
+    "NFS:3:0:7659": {
+        "uuid": "f94af8a6-2584-4321-9bfa-b7b3e4c5f582",
+        "power_state": "on",
+        "name": "karbon-demo02-e06655-etcd-0"
+    },
+    "NFS:15:0:379": {
+        "uuid": "f94af8a6-2584-4321-9bfa-b7b3e4c5f582",
+        "power_state": "on",
+        "name": "karbon-demo02-e06655-etcd-0"
+    },
+    "NFS:5:0:3527": {
+        "uuid": "5f51d49d-b14d-4ff2-a9ff-3058e6719851",
+        "power_state": "off",
+        "name": "frame-instance-prod-v6822-s3150701"
+    },
+    "NFS:2:0:795": {
+        "uuid": "efb75a4e-d697-4e3b-9b1c-2b09fb9b2b5a",
+        "power_state": "off",
+        "name": "smzk-ubuntu"
+    },
+    "NFS:5:0:370": {
+        "uuid": "5e271a22-3f0c-4268-b863-0b3a04a055f6",
+        "power_state": "on",
+        "name": "w2k16-morita"
+    },
+    "NFS:2:0:722": {
+        "uuid": "c3ea4a4a-ec4b-4f3c-862b-76e1c6fcfa54",
+        "power_state": "off",
+        "name": "SG-DB-Prod1"
+    },
+    "NFS:15:0:377": {
+        "uuid": "ff91db9e-2300-40db-873f-91582fcf75a5",
+        "power_state": "on",
+        "name": "karbon-basic-demo01-f0cc25-k8s-worker-0"
+    },
+    "NFS:3:0:7657": {
+        "uuid": "ff91db9e-2300-40db-873f-91582fcf75a5",
+        "power_state": "on",
+        "name": "karbon-basic-demo01-f0cc25-k8s-worker-0"
+    },
+    "NFS:3:0:7656": {
+        "uuid": "ff91db9e-2300-40db-873f-91582fcf75a5",
+        "power_state": "on",
+        "name": "karbon-basic-demo01-f0cc25-k8s-worker-0"
+    },
+    "NFS:3:0:7663": {
+        "uuid": "a94f18d8-ce2a-4409-b2f8-5b903c11dee8",
+        "power_state": "on",
+        "name": "karbon-demo02-c6d611-k8s-master-0"
+    },
+    "NFS:3:0:7662": {
+        "uuid": "a94f18d8-ce2a-4409-b2f8-5b903c11dee8",
+        "power_state": "on",
+        "name": "karbon-demo02-c6d611-k8s-master-0"
+    },
+    "NFS:15:0:381": {
+        "uuid": "a94f18d8-ce2a-4409-b2f8-5b903c11dee8",
+        "power_state": "on",
+        "name": "karbon-demo02-c6d611-k8s-master-0"
+    },
+    "NFS:5:0:2586": {
+        "uuid": "ba388ebb-5174-401b-9ae2-19fa8a93e072",
+        "power_state": "off",
+        "name": "frame-instance-prod-v12032-s3109317"
+    },
+    "NFS:3:0:8028": {
+        "uuid": "a5fb0cf5-fa21-464c-ad34-f06551eaa046",
+        "power_state": "on",
+        "name": "karbon-k8s-km-10a4b8-etcd-0"
+    },
+    "NFS:12:0:403": {
+        "uuid": "a5fb0cf5-fa21-464c-ad34-f06551eaa046",
+        "power_state": "on",
+        "name": "karbon-k8s-km-10a4b8-etcd-0"
+    },
+    "NFS:3:0:5988": {
+        "uuid": "a5fb0cf5-fa21-464c-ad34-f06551eaa046",
+        "power_state": "on",
+        "name": "karbon-k8s-km-10a4b8-etcd-0"
+    },
+    "NFS:3:0:6003": {
+        "uuid": "cba55233-3871-44f2-a0e8-9deae6d24d6b",
+        "power_state": "on",
+        "name": "karbon-1205-aee01a-k8s-worker-0"
+    },
+    "NFS:3:0:6002": {
+        "uuid": "cba55233-3871-44f2-a0e8-9deae6d24d6b",
+        "power_state": "on",
+        "name": "karbon-1205-aee01a-k8s-worker-0"
+    },
+    "NFS:12:0:413": {
+        "uuid": "cba55233-3871-44f2-a0e8-9deae6d24d6b",
+        "power_state": "on",
+        "name": "karbon-1205-aee01a-k8s-worker-0"
+    },
+    "NFS:2:0:1209": {
+        "uuid": "8c8a87f0-1b5b-42ca-9915-336c4f6756cf",
+        "power_state": "on",
+        "name": "basic-seminar01"
+    },
+    "NFS:2:0:1208": {
+        "uuid": "8c8a87f0-1b5b-42ca-9915-336c4f6756cf",
+        "power_state": "on",
+        "name": "basic-seminar01"
+    },
+    "NFS:5:0:3511": {
+        "uuid": "a8cd7f20-68fa-4d03-9824-79ccfaeeac32",
+        "power_state": "off",
+        "name": "frame-instance-prod-v6822-s3148345"
+    },
+    "NFS:5:0:3400": {
+        "uuid": "67c49d07-fe97-4967-94bc-9322c67aeefd",
+        "power_state": "off",
+        "name": "win10-milk13"
+    },
+    "NFS:5:0:3425": {
+        "uuid": "67c49d07-fe97-4967-94bc-9322c67aeefd",
+        "power_state": "off",
+        "name": "win10-milk13"
+    },
+    "NFS:5:0:3412": {
+        "uuid": "6d928b32-6bb9-45e2-abf2-4e30a2e26bcb",
+        "power_state": "off",
+        "name": "win10-milk05"
+    },
+    "NFS:5:0:3381": {
+        "uuid": "6d928b32-6bb9-45e2-abf2-4e30a2e26bcb",
+        "power_state": "off",
+        "name": "win10-milk05"
+    },
+    "NFS:2:0:808": {
+        "uuid": "e49dead5-7fda-4b32-aa8d-fc0875d6eb09",
+        "power_state": "off",
+        "name": "POSTGRES-VM"
+    },
+    "NFS:5:0:3389": {
+        "uuid": "1db8ed77-fa27-4442-aea0-f623b847c55b",
+        "power_state": "on",
+        "name": "win10-milk09"
+    },
+    "NFS:5:0:3421": {
+        "uuid": "1db8ed77-fa27-4442-aea0-f623b847c55b",
+        "power_state": "on",
+        "name": "win10-milk09"
+    },
+    "NFS:2:0:1029": {
+        "uuid": "fe1caa2a-3f31-4c7f-84ad-9dea275c0586",
+        "power_state": "off",
+        "name": "REST_VM"
+    },
+    "NFS:5:0:3442": {
+        "uuid": "d0d9e8fd-4043-4bfe-86be-3dcab698745b",
+        "power_state": "off",
+        "name": "win10-milk19"
+    },
+    "NFS:5:0:3453": {
+        "uuid": "d0d9e8fd-4043-4bfe-86be-3dcab698745b",
+        "power_state": "off",
+        "name": "win10-milk19"
+    }
+}

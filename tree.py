@@ -1,4 +1,5 @@
 import json
+import datetime
 
 def write_json(fname, d):
   with open(fname, 'w') as f:
@@ -134,14 +135,23 @@ def get_tree_dict(vdisk_dict, stats_dict, vmvdisk_dict):
     else:
       childs_dict[parent] = [child]
 
+  now = int(datetime.datetime.now().timestamp() * 1000 * 1000)
+  print(now)
   def add_child_tree(vdiskid, node):
     node['vdisk_name'] = vdisk_dict[vdiskid].get('vdisk_name', '')
+    node['vdisk_uuid'] = vdisk_dict[vdiskid].get('vdisk_uuid', '')
+    last = int(vdisk_dict[vdiskid]['last_modification_time_usecs'])
+    node['no_modification_usec'] = now - last
+    td = datetime.timedelta(seconds=(node['no_modification_usec']/1000000))
+    node['no_modification_time'] = str(td)
     if node['vdisk_name'] in vmvdisk_dict:
       node['is_vm'] = True
       node['vm_name'] = vmvdisk_dict[node['vdisk_name']]['name']
+      node['vm_power_state'] = vmvdisk_dict[node['vdisk_name']]['power_state']
     else:
       node['is_vm'] = False
       node['vm_name'] = ''
+      node['vm_power_state'] = ''
     node['vdisk_size'] = vdisk_dict[vdiskid]['vdisk_size']
     node['vdisk_size_friendly'] = '{:,}'.format(int(node['vdisk_size']))
     node['parent_vdisk_id'] = vdisk_dict[vdiskid].get('parent_vdisk_id', '')

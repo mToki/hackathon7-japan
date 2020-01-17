@@ -99,7 +99,7 @@ def get_vm_list(text):
     for vdiskname in vm['vdiskNames']:
       words = vdiskname.split('::')
       vdisk_names.append(words[1])
-    vm['vdisk_names'] = []
+    vm['vdisk_names'] = vdisk_names
   return vm_list
 
 def get_tree_dict(vdisk_table, stats_table, vm_table):
@@ -118,7 +118,10 @@ def get_tree_dict(vdisk_table, stats_table, vm_table):
       childs_dict[parent_vdisk_id] = [child_vdisk_id]
 
   now = int(datetime.datetime.now().timestamp() * 1000 * 1000)
-  def add_child_tree(vdisk_id, node):
+  def add_child_tree(vdisk_id, node, depth):
+    node['depth'] = depth
+    node['num_childs'] = len(childs_dict.get(vdisk_id, []))
+
     # vdisk
     vdisk_dict = vdisk_table.get(Query().vdisk_id==vdisk_id)
     node['vdisk_name'] = vdisk_dict.get('vdisk_name', '')
@@ -132,21 +135,21 @@ def get_tree_dict(vdisk_table, stats_table, vm_table):
     stats_dict = stats_table.get(Query().vdisk_id==vdisk_id)
     if stats_dict:
       node['user_bytes'] = stats_dict.get('user_bytes', '?')
-      node['inherited_usage_bytes'] = stats_dict.get('user_bytes', '?')
+      node['inherited_user_bytes'] = stats_dict.get('inherited_user_bytes', '?')
     else:
       node['user_bytes'] = '??'
-      node['inherited_usage_bytes'] = '??'
+      node['inherited_user_bytes'] = '??'
     try:
       node['user_bytes_friendly'] = '{:,}'.format(int(node['user_bytes']))
     except:
       node['user_bytes_friendly'] = node['user_bytes']
     try:
-      node['inherited_usage_bytes_friendly'] = '{:,}'.format(int(node['inherited_usage_bytes']))
+      node['inherited_user_bytes_friendly'] = '{:,}'.format(int(node['inherited_user_bytes']))
     except:
-      node['inherited_usage_bytes_friendly'] = node['inherited_usage_bytes']
+      node['inherited_user_bytes_friendly'] = node['inherited_user_bytes']
 
     # vm
-    vm_dict = vm_table.get(Query().vdisk_names.any([vdisk_id]))
+    vm_dict = vm_table.get(Query().vdisk_names.any([node['vdisk_name']]))
     if vm_dict:
       node['is_vm'] = True
       node['vm_name'] = vm_dict['vmName']
@@ -165,13 +168,16 @@ def get_tree_dict(vdisk_table, stats_table, vm_table):
     node['no_modification_time'] = str(td)
 
     # childs
+    num_descendant = 0
     node['child_disks'] = {}
     for child in childs_dict.get(vdisk_id, []):
       node['child_disks'][child] = {}
-      add_child_tree(child, node['child_disks'][child])
+      num_descendant += add_child_tree(child, node['child_disks'][child], depth+1)
+    node['num_descendant'] = num_descendant
+    return num_descendant + 1
 
   for key, value in roots.items():
-    add_child_tree(key, value)
+    add_child_tree(key, value, 1)
   prune_targets = set()
   for key, value in roots.items():
     if not value['is_leaf']:

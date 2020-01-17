@@ -165,7 +165,10 @@
         "acropolisVm": true,
         "runningOnNdfs": true,
         "controllerVm": false,
-        "vdisk_names": []
+        "vdisk_names": [
+            "NFS:5:0:3463",
+            "NFS:5:0:3479"
+        ]
     },
     {
         "vmId": "00058df6-b289-00c6-0000-000000007527::79ea86f1-c4a4-4470-bbc3-af45a34ac23f",
@@ -323,7 +326,9 @@
         "acropolisVm": true,
         "runningOnNdfs": true,
         "controllerVm": false,
-        "vdisk_names": []
+        "vdisk_names": [
+            "NFS:5:0:3132"
+        ]
     },
     {
         "vmId": "00058df6-b289-00c6-0000-000000007527::65f9cb2c-dc9f-4cb7-952c-d00214f4a84a",
@@ -621,7 +626,10 @@
         "acropolisVm": true,
         "runningOnNdfs": true,
         "controllerVm": false,
-        "vdisk_names": []
+        "vdisk_names": [
+            "NFS:5:0:3430",
+            "NFS:5:0:3402"
+        ]
     },
     {
         "vmId": "00058df6-b289-00c6-0000-000000007527::9c2cd24e-5346-474c-b17d-e835cb00f7c1",
@@ -785,7 +793,10 @@
         "acropolisVm": true,
         "runningOnNdfs": true,
         "controllerVm": false,
-        "vdisk_names": []
+        "vdisk_names": [
+            "NFS:5:0:3465",
+            "NFS:5:0:3477"
+        ]
     },
     {
         "vmId": "00058df6-b289-00c6-0000-000000007527::d9538b3c-541a-4406-b862-6da30e23d871",
@@ -944,7 +955,9 @@
         "acropolisVm": true,
         "runningOnNdfs": true,
         "controllerVm": false,
-        "vdisk_names": []
+        "vdisk_names": [
+            "NFS:3:0:6538"
+        ]
     },
     {
         "vmId": "00058df6-b289-00c6-0000-000000007527::06b934b1-8dbb-4035-bef3-a65bf40d0813",
@@ -1104,7 +1117,9 @@
         "acropolisVm": true,
         "runningOnNdfs": true,
         "controllerVm": false,
-        "vdisk_names": []
+        "vdisk_names": [
+            "NFS:5:0:2790"
+        ]
     },
     {
         "vmId": "00058df6-b289-00c6-0000-000000007527::60fba5d0-c9e2-422e-91e2-451688613904",
@@ -1262,7 +1277,9 @@
         "acropolisVm": true,
         "runningOnNdfs": true,
         "controllerVm": false,
-        "vdisk_names": []
+        "vdisk_names": [
+            "NFS:5:0:2347"
+        ]
     },
     {
         "vmId": "00058df6-b289-00c6-0000-000000007527::50eb4c20-1f49-4fc6-882f-b4bfc670e988",
@@ -1425,7 +1442,9 @@
         "acropolisVm": true,
         "runningOnNdfs": true,
         "controllerVm": false,
-        "vdisk_names": []
+        "vdisk_names": [
+            "NFS:5:0:3050"
+        ]
     },
     {
         "vmId": "00058df6-b289-00c6-0000-000000007527::7598aa21-0b6a-43df-8cbe-71989c6c6c47",
@@ -1589,7 +1608,10 @@
         "acropolisVm": true,
         "runningOnNdfs": true,
         "controllerVm": false,
-        "vdisk_names": []
+        "vdisk_names": [
+            "NFS:5:0:3483",
+            "NFS:5:0:3467"
+        ]
     },
     {
         "vmId": "00058df6-b289-00c6-0000-000000007527::9f6c6183-39b3-410b-a64f-ed05417b2e5a",
@@ -1765,7 +1787,11 @@
         "acropolisVm": true,
         "runningOnNdfs": true,
         "controllerVm": false,
-        "vdisk_names": []
+        "vdisk_names": [
+            "NFS:3:0:5999",
+            "NFS:12:0:411",
+            "NFS:3:0:6000"
+        ]
     },
     {
         "vmId": "00058df6-b289-00c6-0000-000000007527::f006af03-f17a-41e5-8e80-0efb6169c317",
@@ -1923,7 +1949,9 @@
         "acropolisVm": true,
         "runningOnNdfs": true,
         "controllerVm": false,
-        "vdisk_names": []
+        "vdisk_names": [
+            "NFS:5:0:2742"
+        ]
     },
     {
         "vmId": "00058df6-b289-00c6-0000-000000007527::23b91441-90b4-4705-832f-40f2ecee4851",
@@ -2087,7 +2115,10 @@
         "acropolisVm": true,
         "runningOnNdfs": true,
         "controllerVm": false,
-        "vdisk_names": []
+        "vdisk_names": [
+            "NFS:5:0:3386",
+            "NFS:5:0:3416"
+        ]
     },
     {
         "vmId": "00058df6-b289-00c6-0000-000000007527::87ee9a7a-c284-4bd4-a696-6754aa3645d9",
@@ -2245,7 +2276,9 @@
         "acropolisVm": true,
         "runningOnNdfs": true,
         "controllerVm": false,
-        "vdisk_names": []
+        "vdisk_names": [
+            "NFS:5:0:2612"
+        ]
     },
     {
         "vmId": "00058df6-b289-00c6-0000-000000007527::f65be0a3-a287-4ecd-a71f-5d5e4c7a1809",
@@ -2413,7 +2446,9 @@
         "acropolisVm": true,
         "runningOnNdfs": true,
         "controllerVm": false,
-        "vdisk_names": []
+        "vdisk_names": [
+            "NFS:3:0:1888"
+        ]
     },
     {
         "vmId": "00058df6-b289-00c6-0000-000000007527::2a8fd24d-e353-49b0-b5a8-5682dc894a2f",
@@ -2571,7 +2606,9 @@
         "acropolisVm": true,
         "runningOnNdfs": true,
         "controllerVm": false,
-        "vdisk_names": []
+        "vdisk_names": [
+            "NFS:5:0:602"
+        ]
     },
     {
         "vmId": "00058df6-b289-00c6-0000-000000007527::1d532a98-fe78-42f5-a86c-32938d868615",
@@ -2747,7 +2784,11 @@
         "acropolisVm": true,
         "runningOnNdfs": true,
         "controllerVm": false,
-        "vdisk_names": []
+        "vdisk_names": [
+            "NFS:3:0:6230",
+            "NFS:15:0:268",
+            "NFS:3:0:6231"
+        ]
     },
     {
         "vmId": "00058df6-b289-00c6-0000-000000007527::4a8e6e35-de0f-4ac6-96c3-0407944838b6",
@@ -2906,7 +2947,9 @@
         "acropolisVm": true,
         "runningOnNdfs": true,
         "controllerVm": false,
-        "vdisk_names": []
+        "vdisk_names": [
+            "NFS:8:0:356"
+        ]
     },
     {
         "vmId": "00058df6-b289-00c6-0000-000000007527::e82e2e89-936e-4725-88ee-13e29606df15",
@@ -3070,7 +3113,10 @@
         "acropolisVm": true,
         "runningOnNdfs": true,
         "controllerVm": false,
-        "vdisk_names": []
+        "vdisk_names": [
+            "NFS:5:0:3455",
+            "NFS:5:0:3446"
+        ]
     },
     {
         "vmId": "00058df6-b289-00c6-0000-000000007527::a600c3b9-2f55-447c-b7cc-455ce47d2d73",
@@ -3246,7 +3292,11 @@
         "acropolisVm": true,
         "runningOnNdfs": true,
         "controllerVm": false,
-        "vdisk_names": []
+        "vdisk_names": [
+            "NFS:15:0:266",
+            "NFS:3:0:6228",
+            "NFS:3:0:6227"
+        ]
     },
     {
         "vmId": "00058df6-b289-00c6-0000-000000007527::52a93265-09e6-4b39-ac89-a30063449d51",
@@ -3412,7 +3462,9 @@
         "acropolisVm": true,
         "runningOnNdfs": true,
         "controllerVm": false,
-        "vdisk_names": []
+        "vdisk_names": [
+            "NFS:3:0:1631"
+        ]
     },
     {
         "vmId": "00058df6-b289-00c6-0000-000000007527::f3cd95fb-25d7-4934-bd43-85374a43e26e",
@@ -3571,7 +3623,9 @@
         "acropolisVm": true,
         "runningOnNdfs": true,
         "controllerVm": false,
-        "vdisk_names": []
+        "vdisk_names": [
+            "NFS:2:0:675"
+        ]
     },
     {
         "vmId": "00058df6-b289-00c6-0000-000000007527::6c39a2b5-2ab3-492c-9f4c-66aeb595e5ad",
@@ -3876,7 +3930,10 @@
         "acropolisVm": true,
         "runningOnNdfs": true,
         "controllerVm": false,
-        "vdisk_names": []
+        "vdisk_names": [
+            "NFS:3:0:5839",
+            "NFS:12:0:387"
+        ]
     },
     {
         "vmId": "00058df6-b289-00c6-0000-000000007527::e748b2b8-3959-48cf-b69c-6a8fe73fb432",
@@ -4035,7 +4092,9 @@
         "acropolisVm": true,
         "runningOnNdfs": true,
         "controllerVm": false,
-        "vdisk_names": []
+        "vdisk_names": [
+            "NFS:2:0:796"
+        ]
     },
     {
         "vmId": "00058df6-b289-00c6-0000-000000007527::ab33087a-0c8b-4186-89d1-56cb88b77dda",
@@ -4199,7 +4258,10 @@
         "acropolisVm": true,
         "runningOnNdfs": true,
         "controllerVm": false,
-        "vdisk_names": []
+        "vdisk_names": [
+            "NFS:5:0:3367",
+            "NFS:5:0:3378"
+        ]
     },
     {
         "vmId": "00058df6-b289-00c6-0000-000000007527::12c5e24c-6f49-4786-a019-6ca587f16fb4",
@@ -4361,7 +4423,9 @@
         "acropolisVm": true,
         "runningOnNdfs": true,
         "controllerVm": false,
-        "vdisk_names": []
+        "vdisk_names": [
+            "NFS:2:0:1036"
+        ]
     },
     {
         "vmId": "00058df6-b289-00c6-0000-000000007527::77160eaa-1d1e-4bd1-b2ec-5cb4b9859625",
@@ -4520,7 +4584,9 @@
         "acropolisVm": true,
         "runningOnNdfs": true,
         "controllerVm": false,
-        "vdisk_names": []
+        "vdisk_names": [
+            "NFS:2:0:791"
+        ]
     },
     {
         "vmId": "00058df6-b289-00c6-0000-000000007527::f9d32d4c-bbff-46a8-bdff-d677471ff92e",
@@ -4688,7 +4754,10 @@
         "acropolisVm": true,
         "runningOnNdfs": true,
         "controllerVm": false,
-        "vdisk_names": []
+        "vdisk_names": [
+            "NFS:4:0:558",
+            "NFS:5:0:865"
+        ]
     },
     {
         "vmId": "00058df6-b289-00c6-0000-000000007527::7415284d-7a2c-4c5b-8397-f1e8e8ee842b",
@@ -4864,7 +4933,11 @@
         "acropolisVm": true,
         "runningOnNdfs": true,
         "controllerVm": false,
-        "vdisk_names": []
+        "vdisk_names": [
+            "NFS:3:0:5831",
+            "NFS:12:0:381",
+            "NFS:3:0:5832"
+        ]
     },
     {
         "vmId": "00058df6-b289-00c6-0000-000000007527::19da9fcf-c11f-49d9-8443-fbc1ab96a743",
@@ -5027,7 +5100,9 @@
         "acropolisVm": true,
         "runningOnNdfs": true,
         "controllerVm": false,
-        "vdisk_names": []
+        "vdisk_names": [
+            "NFS:3:0:5884"
+        ]
     },
     {
         "vmId": "00058df6-b289-00c6-0000-000000007527::e2c3a5a2-96a9-4af7-bfef-a6fb44856e6c",
@@ -5195,7 +5270,9 @@
         "acropolisVm": true,
         "runningOnNdfs": true,
         "controllerVm": false,
-        "vdisk_names": []
+        "vdisk_names": [
+            "NFS:3:0:1629"
+        ]
     },
     {
         "vmId": "00058df6-b289-00c6-0000-000000007527::2ab2b2a7-7edb-4ffe-8be6-4a85f23d7c82",
@@ -5366,7 +5443,10 @@
         "acropolisVm": true,
         "runningOnNdfs": true,
         "controllerVm": false,
-        "vdisk_names": []
+        "vdisk_names": [
+            "NFS:8:0:258",
+            "NFS:4:0:462"
+        ]
     },
     {
         "vmId": "00058df6-b289-00c6-0000-000000007527::6ad40cd9-e8b2-4827-897e-480db4f9a30f",
@@ -5526,7 +5606,9 @@
         "acropolisVm": true,
         "runningOnNdfs": true,
         "controllerVm": false,
-        "vdisk_names": []
+        "vdisk_names": [
+            "NFS:5:0:2660"
+        ]
     },
     {
         "vmId": "00058df6-b289-00c6-0000-000000007527::d805373b-a524-4f81-8396-8fb8df1b166a",
@@ -5684,7 +5766,9 @@
         "acropolisVm": true,
         "runningOnNdfs": true,
         "controllerVm": false,
-        "vdisk_names": []
+        "vdisk_names": [
+            "NFS:5:0:1615"
+        ]
     },
     {
         "vmId": "00058df6-b289-00c6-0000-000000007527::5308a443-4e48-4f2c-a98b-2d04cafc2685",
@@ -5845,7 +5929,9 @@
         "acropolisVm": true,
         "runningOnNdfs": true,
         "controllerVm": false,
-        "vdisk_names": []
+        "vdisk_names": [
+            "NFS:2:0:524"
+        ]
     },
     {
         "vmId": "00058df6-b289-00c6-0000-000000007527::52cbdf5c-8eeb-4e55-b7ab-b7c2d3a7c566",
@@ -6021,7 +6107,11 @@
         "acropolisVm": true,
         "runningOnNdfs": true,
         "controllerVm": false,
-        "vdisk_names": []
+        "vdisk_names": [
+            "NFS:3:0:5996",
+            "NFS:3:0:5997",
+            "NFS:12:0:409"
+        ]
     },
     {
         "vmId": "00058df6-b289-00c6-0000-000000007527::06e0fc4b-7df5-40fe-b87f-ead7cff0cf5b",
@@ -6179,7 +6269,9 @@
         "acropolisVm": true,
         "runningOnNdfs": true,
         "controllerVm": false,
-        "vdisk_names": []
+        "vdisk_names": [
+            "NFS:5:0:2774"
+        ]
     },
     {
         "vmId": "00058df6-b289-00c6-0000-000000007527::cd373b34-cf7d-4ee7-953a-1d3442388181",
@@ -6341,7 +6433,9 @@
         "acropolisVm": true,
         "runningOnNdfs": true,
         "controllerVm": false,
-        "vdisk_names": []
+        "vdisk_names": [
+            "NFS:2:0:1077"
+        ]
     },
     {
         "vmId": "00058df6-b289-00c6-0000-000000007527::27850e27-a3dc-410c-925f-80e799dcbd4f",
@@ -6499,7 +6593,9 @@
         "acropolisVm": true,
         "runningOnNdfs": true,
         "controllerVm": false,
-        "vdisk_names": []
+        "vdisk_names": [
+            "NFS:5:0:1371"
+        ]
     },
     {
         "vmId": "00058df6-b289-00c6-0000-000000007527::50b97259-9930-4477-b61a-2779310b21ca",
@@ -6657,7 +6753,9 @@
         "acropolisVm": true,
         "runningOnNdfs": true,
         "controllerVm": false,
-        "vdisk_names": []
+        "vdisk_names": [
+            "NFS:5:0:2644"
+        ]
     },
     {
         "vmId": "00058df6-b289-00c6-0000-000000007527::c7db0472-28ad-4a7f-b612-e464c060b61e",
@@ -6815,7 +6913,9 @@
         "acropolisVm": true,
         "runningOnNdfs": true,
         "controllerVm": false,
-        "vdisk_names": []
+        "vdisk_names": [
+            "NFS:5:0:814"
+        ]
     },
     {
         "vmId": "00058df6-b289-00c6-0000-000000007527::d7ce6803-e09f-49ec-a9e7-ff216232501f",
@@ -6992,7 +7092,11 @@
         "acropolisVm": true,
         "runningOnNdfs": true,
         "controllerVm": false,
-        "vdisk_names": []
+        "vdisk_names": [
+            "NFS:15:0:260",
+            "NFS:3:0:6042",
+            "NFS:3:0:6041"
+        ]
     },
     {
         "vmId": "00058df6-b289-00c6-0000-000000007527::8ca8c1ba-3bef-4d8f-b903-0401403b4101",
@@ -7168,7 +7272,11 @@
         "acropolisVm": true,
         "runningOnNdfs": true,
         "controllerVm": false,
-        "vdisk_names": []
+        "vdisk_names": [
+            "NFS:3:0:7665",
+            "NFS:15:0:383",
+            "NFS:3:0:7666"
+        ]
     },
     {
         "vmId": "00058df6-b289-00c6-0000-000000007527::bc56dc3c-0de0-47e6-948e-1e1cf4c1dd6c",
@@ -7326,7 +7434,9 @@
         "acropolisVm": true,
         "runningOnNdfs": true,
         "controllerVm": false,
-        "vdisk_names": []
+        "vdisk_names": [
+            "NFS:5:0:2185"
+        ]
     },
     {
         "vmId": "00058df6-b289-00c6-0000-000000007527::b247ed7a-f131-49fc-b277-eb3e7f7f85af",
@@ -7485,7 +7595,9 @@
         "acropolisVm": true,
         "runningOnNdfs": true,
         "controllerVm": false,
-        "vdisk_names": []
+        "vdisk_names": [
+            "NFS:3:0:6539"
+        ]
     },
     {
         "vmId": "00058df6-b289-00c6-0000-000000007527::ac2b3c21-99a5-401a-992d-3a6b98fadfe8",
@@ -7645,7 +7757,9 @@
         "acropolisVm": true,
         "runningOnNdfs": true,
         "controllerVm": false,
-        "vdisk_names": []
+        "vdisk_names": [
+            "NFS:5:0:488"
+        ]
     },
     {
         "vmId": "00058df6-b289-00c6-0000-000000007527::23d0225d-8731-4483-86b3-50816b91d11e",
@@ -7803,7 +7917,9 @@
         "acropolisVm": true,
         "runningOnNdfs": true,
         "controllerVm": false,
-        "vdisk_names": []
+        "vdisk_names": [
+            "NFS:5:0:2201"
+        ]
     },
     {
         "vmId": "00058df6-b289-00c6-0000-000000007527::eb3b90a0-d53c-453b-8ff6-b2be87262ea7",
@@ -7964,7 +8080,9 @@
         "acropolisVm": true,
         "runningOnNdfs": true,
         "controllerVm": false,
-        "vdisk_names": []
+        "vdisk_names": [
+            "NFS:3:0:2367"
+        ]
     },
     {
         "vmId": "00058df6-b289-00c6-0000-000000007527::1a1d91aa-c5ac-4b27-98f6-b4c3de8a8971",
@@ -8141,7 +8259,11 @@
         "acropolisVm": true,
         "runningOnNdfs": true,
         "controllerVm": false,
-        "vdisk_names": []
+        "vdisk_names": [
+            "NFS:3:0:5775",
+            "NFS:12:0:363",
+            "NFS:3:0:5774"
+        ]
     },
     {
         "vmId": "00058df6-b289-00c6-0000-000000007527::f134a340-b4cb-4327-a41d-dda4616f768e",
@@ -8303,7 +8425,9 @@
         "acropolisVm": true,
         "runningOnNdfs": true,
         "controllerVm": false,
-        "vdisk_names": []
+        "vdisk_names": [
+            "NFS:2:0:358"
+        ]
     },
     {
         "vmId": "00058df6-b289-00c6-0000-000000007527::f64d0066-73a0-4098-8090-010d096c2417",
@@ -8467,7 +8591,10 @@
         "acropolisVm": true,
         "runningOnNdfs": true,
         "controllerVm": false,
-        "vdisk_names": []
+        "vdisk_names": [
+            "NFS:5:0:3440",
+            "NFS:5:0:3437"
+        ]
     },
     {
         "vmId": "00058df6-b289-00c6-0000-000000007527::3f25299b-1b28-4674-bb0e-a9b9af951f22",
@@ -8644,7 +8771,11 @@
         "acropolisVm": true,
         "runningOnNdfs": true,
         "controllerVm": false,
-        "vdisk_names": []
+        "vdisk_names": [
+            "NFS:3:0:5503",
+            "NFS:12:0:357",
+            "NFS:3:0:5502"
+        ]
     },
     {
         "vmId": "00058df6-b289-00c6-0000-000000007527::c2e4ce01-d040-4719-86de-56911cd612f6",
@@ -8802,7 +8933,9 @@
         "acropolisVm": true,
         "runningOnNdfs": true,
         "controllerVm": false,
-        "vdisk_names": []
+        "vdisk_names": [
+            "NFS:5:0:1485"
+        ]
     },
     {
         "vmId": "00058df6-b289-00c6-0000-000000007527::133eb202-9602-4bd6-95fd-e39746d1b1a0",
@@ -9110,7 +9243,11 @@
         "acropolisVm": true,
         "runningOnNdfs": true,
         "controllerVm": false,
-        "vdisk_names": []
+        "vdisk_names": [
+            "NFS:3:0:7633",
+            "NFS:15:0:361",
+            "NFS:3:0:7632"
+        ]
     },
     {
         "vmId": "00058df6-b289-00c6-0000-000000007527::88d8716c-11da-4b27-bba2-846825d77845",
@@ -9286,7 +9423,11 @@
         "acropolisVm": true,
         "runningOnNdfs": true,
         "controllerVm": false,
-        "vdisk_names": []
+        "vdisk_names": [
+            "NFS:15:0:375",
+            "NFS:3:0:7653",
+            "NFS:3:0:7654"
+        ]
     },
     {
         "vmId": "00058df6-b289-00c6-0000-000000007527::2a87d1ba-9e3d-4a4b-8171-06ccdd7ad9cf",
@@ -9466,7 +9607,12 @@
         "acropolisVm": true,
         "runningOnNdfs": true,
         "controllerVm": false,
-        "vdisk_names": []
+        "vdisk_names": [
+            "NFS:7:0:274",
+            "NFS:7:0:267",
+            "NFS:7:0:271",
+            "NFS:7:0:263"
+        ]
     },
     {
         "vmId": "00058df6-b289-00c6-0000-000000007527::bb6c621e-2ad0-427c-9a4e-d8553b15e190",
@@ -9626,7 +9772,9 @@
         "acropolisVm": true,
         "runningOnNdfs": true,
         "controllerVm": false,
-        "vdisk_names": []
+        "vdisk_names": [
+            "NFS:5:0:3591"
+        ]
     },
     {
         "vmId": "00058df6-b289-00c6-0000-000000007527::e00a8e95-12fa-451b-af4e-c2cde23acafc",
@@ -9785,7 +9933,9 @@
         "acropolisVm": true,
         "runningOnNdfs": true,
         "controllerVm": false,
-        "vdisk_names": []
+        "vdisk_names": [
+            "NFS:2:0:755"
+        ]
     },
     {
         "vmId": "00058df6-b289-00c6-0000-000000007527::b9476ab0-d3ca-4a0c-bc2a-2c564072ae90",
@@ -9943,7 +10093,9 @@
         "acropolisVm": true,
         "runningOnNdfs": true,
         "controllerVm": false,
-        "vdisk_names": []
+        "vdisk_names": [
+            "NFS:5:0:1907"
+        ]
     },
     {
         "vmId": "00058df6-b289-00c6-0000-000000007527::2752225e-a0db-45d0-9b72-e7e8926d5ff9",
@@ -10101,7 +10253,9 @@
         "acropolisVm": true,
         "runningOnNdfs": true,
         "controllerVm": false,
-        "vdisk_names": []
+        "vdisk_names": [
+            "NFS:5:0:1957"
+        ]
     },
     {
         "vmId": "00058df6-b289-00c6-0000-000000007527::2bb0a638-0d17-4bb1-a5c4-954745367640",
@@ -10265,7 +10419,10 @@
         "acropolisVm": true,
         "runningOnNdfs": true,
         "controllerVm": false,
-        "vdisk_names": []
+        "vdisk_names": [
+            "NFS:5:0:3373",
+            "NFS:5:0:3406"
+        ]
     },
     {
         "vmId": "00058df6-b289-00c6-0000-000000007527::54386a64-dbe3-4973-8719-301142333bac",
@@ -10445,7 +10602,12 @@
         "acropolisVm": true,
         "runningOnNdfs": true,
         "controllerVm": false,
-        "vdisk_names": []
+        "vdisk_names": [
+            "NFS:7:0:265",
+            "NFS:7:0:272",
+            "NFS:7:0:275",
+            "NFS:7:0:277"
+        ]
     },
     {
         "vmId": "00058df6-b289-00c6-0000-000000007527::30874468-9339-4fce-94b6-0eb1e724c884",
@@ -10603,7 +10765,9 @@
         "acropolisVm": true,
         "runningOnNdfs": true,
         "controllerVm": false,
-        "vdisk_names": []
+        "vdisk_names": [
+            "NFS:5:0:1859"
+        ]
     },
     {
         "vmId": "00058df6-b289-00c6-0000-000000007527::bb8d1db3-f101-4d9d-b37b-9c17b98bf484",
@@ -10765,7 +10929,9 @@
         "acropolisVm": true,
         "runningOnNdfs": true,
         "controllerVm": false,
-        "vdisk_names": []
+        "vdisk_names": [
+            "NFS:2:0:1068"
+        ]
     },
     {
         "vmId": "00058df6-b289-00c6-0000-000000007527::7fa9d136-8be9-4f58-8a4c-00215c6e04b4",
@@ -10929,7 +11095,10 @@
         "acropolisVm": true,
         "runningOnNdfs": true,
         "controllerVm": false,
-        "vdisk_names": []
+        "vdisk_names": [
+            "NFS:5:0:3480",
+            "NFS:5:0:3460"
+        ]
     },
     {
         "vmId": "00058df6-b289-00c6-0000-000000007527::59cdca08-6b93-4a06-8494-305f42a1b1c1",
@@ -11092,7 +11261,9 @@
         "acropolisVm": true,
         "runningOnNdfs": true,
         "controllerVm": false,
-        "vdisk_names": []
+        "vdisk_names": [
+            "NFS:2:0:875"
+        ]
     },
     {
         "vmId": "00058df6-b289-00c6-0000-000000007527::382f7202-7967-4264-8051-4fb0e78bf33f",
@@ -11254,7 +11425,9 @@
         "acropolisVm": true,
         "runningOnNdfs": true,
         "controllerVm": false,
-        "vdisk_names": []
+        "vdisk_names": [
+            "NFS:2:0:1031"
+        ]
     },
     {
         "vmId": "00058df6-b289-00c6-0000-000000007527::1f0b03a0-368c-48aa-8fa4-2efb09a79118",
@@ -11414,7 +11587,9 @@
         "acropolisVm": true,
         "runningOnNdfs": true,
         "controllerVm": false,
-        "vdisk_names": []
+        "vdisk_names": [
+            "NFS:3:0:5885"
+        ]
     },
     {
         "vmId": "00058df6-b289-00c6-0000-000000007527::16aec663-bdf3-4219-9869-8a524423a5b8",
@@ -11591,7 +11766,11 @@
         "acropolisVm": true,
         "runningOnNdfs": true,
         "controllerVm": false,
-        "vdisk_names": []
+        "vdisk_names": [
+            "NFS:3:0:5517",
+            "NFS:3:0:5516",
+            "NFS:12:0:361"
+        ]
     },
     {
         "vmId": "00058df6-b289-00c6-0000-000000007527::9b11202c-5a41-4449-b2b1-001b2cbbaa45",
@@ -11751,7 +11930,9 @@
         "acropolisVm": true,
         "runningOnNdfs": true,
         "controllerVm": false,
-        "vdisk_names": []
+        "vdisk_names": [
+            "NFS:5:0:472"
+        ]
     },
     {
         "vmId": "00058df6-b289-00c6-0000-000000007527::14b2038d-dc22-4357-85df-7457a95eaa7d",
@@ -11909,7 +12090,9 @@
         "acropolisVm": true,
         "runningOnNdfs": true,
         "controllerVm": false,
-        "vdisk_names": []
+        "vdisk_names": [
+            "NFS:5:0:2299"
+        ]
     },
     {
         "vmId": "00058df6-b289-00c6-0000-000000007527::2e66c087-47fc-459b-8bd0-13b94a38bc52",
@@ -12068,7 +12251,9 @@
         "acropolisVm": true,
         "runningOnNdfs": true,
         "controllerVm": false,
-        "vdisk_names": []
+        "vdisk_names": [
+            "NFS:2:0:705"
+        ]
     },
     {
         "vmId": "00058df6-b289-00c6-0000-000000007527::21afd869-a93b-472b-8483-3507262eba75",
@@ -12239,7 +12424,10 @@
         "acropolisVm": true,
         "runningOnNdfs": true,
         "controllerVm": false,
-        "vdisk_names": []
+        "vdisk_names": [
+            "NFS:2:0:511",
+            "NFS:4:0:564"
+        ]
     },
     {
         "vmId": "00058df6-b289-00c6-0000-000000007527::20ef5338-3c09-4db5-87af-73f52a25fa51",
@@ -12398,7 +12586,9 @@
         "acropolisVm": true,
         "runningOnNdfs": true,
         "controllerVm": false,
-        "vdisk_names": []
+        "vdisk_names": [
+            "NFS:2:0:723"
+        ]
     },
     {
         "vmId": "00058df6-b289-00c6-0000-000000007527::548e0bb6-be77-4c96-b40d-ca0cde30ef61",
@@ -12562,7 +12752,10 @@
         "acropolisVm": true,
         "runningOnNdfs": true,
         "controllerVm": false,
-        "vdisk_names": []
+        "vdisk_names": [
+            "NFS:5:0:3427",
+            "NFS:5:0:3395"
+        ]
     },
     {
         "vmId": "00058df6-b289-00c6-0000-000000007527::75cc96cf-47bb-4f45-a701-60f1bf26ca10",
@@ -12720,7 +12913,9 @@
         "acropolisVm": true,
         "runningOnNdfs": true,
         "controllerVm": false,
-        "vdisk_names": []
+        "vdisk_names": [
+            "NFS:5:0:748"
+        ]
     },
     {
         "vmId": "00058df6-b289-00c6-0000-000000007527::ae9728de-2163-49b6-8dac-54ecaf3f3f94",
@@ -12884,7 +13079,9 @@
         "acropolisVm": true,
         "runningOnNdfs": true,
         "controllerVm": false,
-        "vdisk_names": []
+        "vdisk_names": [
+            "NFS:2:0:990"
+        ]
     },
     {
         "vmId": "00058df6-b289-00c6-0000-000000007527::dc1abcc3-853c-44e5-bfdc-c1058e450a32",
@@ -13046,7 +13243,9 @@
         "acropolisVm": true,
         "runningOnNdfs": true,
         "controllerVm": false,
-        "vdisk_names": []
+        "vdisk_names": [
+            "NFS:2:0:1027"
+        ]
     },
     {
         "vmId": "00058df6-b289-00c6-0000-000000007527::9bf7aed8-8c28-4246-ba27-f3b9371a39f1",
@@ -13222,7 +13421,11 @@
         "acropolisVm": true,
         "runningOnNdfs": true,
         "controllerVm": false,
-        "vdisk_names": []
+        "vdisk_names": [
+            "NFS:3:0:8032",
+            "NFS:12:0:407",
+            "NFS:3:0:5994"
+        ]
     },
     {
         "vmId": "00058df6-b289-00c6-0000-000000007527::f020f613-a781-4d0e-a118-7239b97a7c46",
@@ -13385,7 +13588,9 @@
         "acropolisVm": true,
         "runningOnNdfs": true,
         "controllerVm": false,
-        "vdisk_names": []
+        "vdisk_names": [
+            "NFS:5:0:3018"
+        ]
     },
     {
         "vmId": "00058df6-b289-00c6-0000-000000007527::ed5c310e-e446-49b9-9ca2-14e1ddfb18a2",
@@ -13553,7 +13758,10 @@
         "acropolisVm": true,
         "runningOnNdfs": true,
         "controllerVm": false,
-        "vdisk_names": []
+        "vdisk_names": [
+            "NFS:4:0:415",
+            "NFS:5:0:403"
+        ]
     },
     {
         "vmId": "00058df6-b289-00c6-0000-000000007527::195ed5d6-54a5-432b-8979-e012ce202f31",
@@ -13713,7 +13921,9 @@
         "acropolisVm": true,
         "runningOnNdfs": true,
         "controllerVm": false,
-        "vdisk_names": []
+        "vdisk_names": [
+            "NFS:5:0:764"
+        ]
     },
     {
         "vmId": "00058df6-b289-00c6-0000-000000007527::b239a270-8890-4cd0-9d00-345d1fdb9c04",
@@ -13877,7 +14087,10 @@
         "acropolisVm": true,
         "runningOnNdfs": true,
         "controllerVm": false,
-        "vdisk_names": []
+        "vdisk_names": [
+            "NFS:5:0:3383",
+            "NFS:5:0:3414"
+        ]
     },
     {
         "vmId": "00058df6-b289-00c6-0000-000000007527::9246e95e-caeb-4c0f-991e-a91f0c1f1442",
@@ -14039,7 +14252,9 @@
         "acropolisVm": true,
         "runningOnNdfs": true,
         "controllerVm": false,
-        "vdisk_names": []
+        "vdisk_names": [
+            "NFS:5:0:371"
+        ]
     },
     {
         "vmId": "00058df6-b289-00c6-0000-000000007527::e04bfbd3-a756-4274-a7bf-44c648bb6d46",
@@ -14202,7 +14417,9 @@
         "acropolisVm": true,
         "runningOnNdfs": true,
         "controllerVm": false,
-        "vdisk_names": []
+        "vdisk_names": [
+            "NFS:5:0:929"
+        ]
     },
     {
         "vmId": "00058df6-b289-00c6-0000-000000007527::0a458a1f-be88-460b-af8b-2f3bf10c96f7",
@@ -14364,7 +14581,9 @@
         "acropolisVm": true,
         "runningOnNdfs": true,
         "controllerVm": false,
-        "vdisk_names": []
+        "vdisk_names": [
+            "NFS:2:0:876"
+        ]
     },
     {
         "vmId": "00058df6-b289-00c6-0000-000000007527::804c750e-4254-445d-b694-614305dadf1b",
@@ -14537,7 +14756,11 @@
         "acropolisVm": true,
         "runningOnNdfs": true,
         "controllerVm": false,
-        "vdisk_names": []
+        "vdisk_names": [
+            "NFS:2:0:457",
+            "NFS:4:0:458",
+            "NFS:4:0:460"
+        ]
     },
     {
         "vmId": "00058df6-b289-00c6-0000-000000007527::91ca1b8d-00c7-40e4-8c5c-d0c9f4d066e7",
@@ -14698,7 +14921,9 @@
         "acropolisVm": true,
         "runningOnNdfs": true,
         "controllerVm": false,
-        "vdisk_names": []
+        "vdisk_names": [
+            "NFS:3:0:6023"
+        ]
     },
     {
         "vmId": "00058df6-b289-00c6-0000-000000007527::92cf0632-97c6-4b5b-a97f-09e6ad43cce0",
@@ -14858,7 +15083,9 @@
         "acropolisVm": true,
         "runningOnNdfs": true,
         "controllerVm": false,
-        "vdisk_names": []
+        "vdisk_names": [
+            "NFS:5:0:504"
+        ]
     },
     {
         "vmId": "00058df6-b289-00c6-0000-000000007527::4e1c5136-84e1-416c-a97b-f8f83f98914e",
@@ -15022,7 +15249,10 @@
         "acropolisVm": true,
         "runningOnNdfs": true,
         "controllerVm": false,
-        "vdisk_names": []
+        "vdisk_names": [
+            "NFS:5:0:3408",
+            "NFS:5:0:3379"
+        ]
     },
     {
         "vmId": "00058df6-b289-00c6-0000-000000007527::8ab7bca0-6501-4141-8be0-f5b0985676d1",
@@ -15192,7 +15422,10 @@
         "acropolisVm": true,
         "runningOnNdfs": true,
         "controllerVm": false,
-        "vdisk_names": []
+        "vdisk_names": [
+            "NFS:3:0:1627",
+            "NFS:9:0:384"
+        ]
     },
     {
         "vmId": "00058df6-b289-00c6-0000-000000007527::c192de94-b4eb-4975-abb6-936f72c8b64e",
@@ -15373,7 +15606,12 @@
         "acropolisVm": true,
         "runningOnNdfs": true,
         "controllerVm": false,
-        "vdisk_names": []
+        "vdisk_names": [
+            "NFS:7:0:276",
+            "NFS:7:0:264",
+            "NFS:7:0:273",
+            "NFS:7:0:270"
+        ]
     },
     {
         "vmId": "00058df6-b289-00c6-0000-000000007527::2f42f219-52f9-4a47-9219-753f0b6fb58f",
@@ -15532,7 +15770,9 @@
         "acropolisVm": true,
         "runningOnNdfs": true,
         "controllerVm": false,
-        "vdisk_names": []
+        "vdisk_names": [
+            "NFS:3:0:5650"
+        ]
     },
     {
         "vmId": "00058df6-b289-00c6-0000-000000007527::e9d9bc5a-3d7f-47f9-be54-21cd3d3d726f",
@@ -15694,7 +15934,9 @@
         "acropolisVm": true,
         "runningOnNdfs": true,
         "controllerVm": false,
-        "vdisk_names": []
+        "vdisk_names": [
+            "NFS:5:0:419"
+        ]
     },
     {
         "vmId": "00058df6-b289-00c6-0000-000000007527::94385249-0181-4132-90cc-1c9c36d78f4f",
@@ -15851,7 +16093,9 @@
         "acropolisVm": true,
         "runningOnNdfs": true,
         "controllerVm": false,
-        "vdisk_names": []
+        "vdisk_names": [
+            "NFS:3:0:6017"
+        ]
     },
     {
         "vmId": "00058df6-b289-00c6-0000-000000007527::26d5d632-da6a-4737-87b7-2552b675f1b5",
@@ -16013,7 +16257,9 @@
         "acropolisVm": true,
         "runningOnNdfs": true,
         "controllerVm": false,
-        "vdisk_names": []
+        "vdisk_names": [
+            "NFS:2:0:1104"
+        ]
     },
     {
         "vmId": "00058df6-b289-00c6-0000-000000007527::02aadd82-92b3-45af-9314-c1582fd77b78",
@@ -16189,7 +16435,11 @@
         "acropolisVm": true,
         "runningOnNdfs": true,
         "controllerVm": false,
-        "vdisk_names": []
+        "vdisk_names": [
+            "NFS:3:0:7651",
+            "NFS:3:0:7650",
+            "NFS:15:0:373"
+        ]
     },
     {
         "vmId": "00058df6-b289-00c6-0000-000000007527::3bfbdd89-46ff-4f2f-bf3c-5ae1f161b78b",
@@ -16348,7 +16598,9 @@
         "acropolisVm": true,
         "runningOnNdfs": true,
         "controllerVm": false,
-        "vdisk_names": []
+        "vdisk_names": [
+            "NFS:2:0:775"
+        ]
     },
     {
         "vmId": "00058df6-b289-00c6-0000-000000007527::49354840-0b70-4c1b-b779-10507dd00aca",
@@ -16524,7 +16776,11 @@
         "acropolisVm": true,
         "runningOnNdfs": true,
         "controllerVm": false,
-        "vdisk_names": []
+        "vdisk_names": [
+            "NFS:3:0:5991",
+            "NFS:3:0:8030",
+            "NFS:12:0:405"
+        ]
     },
     {
         "vmId": "00058df6-b289-00c6-0000-000000007527::b5b23cbd-468f-468a-a1a3-696d72649970",
@@ -16684,7 +16940,9 @@
         "acropolisVm": true,
         "runningOnNdfs": true,
         "controllerVm": false,
-        "vdisk_names": []
+        "vdisk_names": [
+            "NFS:5:0:2708"
+        ]
     },
     {
         "vmId": "00058df6-b289-00c6-0000-000000007527::5b63056b-85c8-4490-90ba-b4ed85ba42a7",
@@ -16844,7 +17102,9 @@
         "acropolisVm": true,
         "runningOnNdfs": true,
         "controllerVm": false,
-        "vdisk_names": []
+        "vdisk_names": [
+            "NFS:5:0:2692"
+        ]
     },
     {
         "vmId": "00058df6-b289-00c6-0000-000000007527::24498418-6972-4823-92b0-d07be9fc6e04",
@@ -17008,7 +17268,10 @@
         "acropolisVm": true,
         "runningOnNdfs": true,
         "controllerVm": false,
-        "vdisk_names": []
+        "vdisk_names": [
+            "NFS:5:0:3476",
+            "NFS:5:0:3456"
+        ]
     },
     {
         "vmId": "00058df6-b289-00c6-0000-000000007527::e2e5ea7b-2d6b-4d22-80ad-a070061033dc",
@@ -17172,7 +17435,10 @@
         "acropolisVm": true,
         "runningOnNdfs": true,
         "controllerVm": false,
-        "vdisk_names": []
+        "vdisk_names": [
+            "NFS:5:0:3418",
+            "NFS:5:0:3392"
+        ]
     },
     {
         "vmId": "00058df6-b289-00c6-0000-000000007527::280dc004-4802-4aaa-920a-000a5049856f",
@@ -17334,7 +17600,9 @@
         "acropolisVm": true,
         "runningOnNdfs": true,
         "controllerVm": false,
-        "vdisk_names": []
+        "vdisk_names": [
+            "NFS:3:0:5867"
+        ]
     },
     {
         "vmId": "00058df6-b289-00c6-0000-000000007527::ec2033fb-330c-4df8-b49e-c9c4ec0f71ea",
@@ -17494,7 +17762,9 @@
         "acropolisVm": true,
         "runningOnNdfs": true,
         "controllerVm": false,
-        "vdisk_names": []
+        "vdisk_names": [
+            "NFS:5:0:2676"
+        ]
     },
     {
         "vmId": "00058df6-b289-00c6-0000-000000007527::978e4ae2-d85a-4718-bec2-44bf643fe21e",
@@ -17656,7 +17926,9 @@
         "acropolisVm": true,
         "runningOnNdfs": true,
         "controllerVm": false,
-        "vdisk_names": []
+        "vdisk_names": [
+            "NFS:2:0:1120"
+        ]
     },
     {
         "vmId": "00058df6-b289-00c6-0000-000000007527::1e13318b-2ae4-45e3-a80b-aad01deefa6e",
@@ -17816,7 +18088,9 @@
         "acropolisVm": true,
         "runningOnNdfs": true,
         "controllerVm": false,
-        "vdisk_names": []
+        "vdisk_names": [
+            "NFS:5:0:3575"
+        ]
     },
     {
         "vmId": "00058df6-b289-00c6-0000-000000007527::87272c00-f50f-467d-a858-28759604a8fe",
@@ -17980,7 +18254,10 @@
         "acropolisVm": true,
         "runningOnNdfs": true,
         "controllerVm": false,
-        "vdisk_names": []
+        "vdisk_names": [
+            "NFS:5:0:3403",
+            "NFS:5:0:3372"
+        ]
     },
     {
         "vmId": "00058df6-b289-00c6-0000-000000007527::346933c6-f3e1-45e2-8ed6-a5a0b7ab4f41",
@@ -18278,7 +18555,10 @@
         "acropolisVm": true,
         "runningOnNdfs": true,
         "controllerVm": false,
-        "vdisk_names": []
+        "vdisk_names": [
+            "NFS:5:0:3470",
+            "NFS:5:0:3484"
+        ]
     },
     {
         "vmId": "00058df6-b289-00c6-0000-000000007527::05e54eaa-a20b-4331-8ea9-a387cb52aa47",
@@ -18442,7 +18722,10 @@
         "acropolisVm": true,
         "runningOnNdfs": true,
         "controllerVm": false,
-        "vdisk_names": []
+        "vdisk_names": [
+            "NFS:5:0:3396",
+            "NFS:5:0:3429"
+        ]
     },
     {
         "vmId": "00058df6-b289-00c6-0000-000000007527::d2fe8074-ce27-46b0-8f4b-2a54dbf4ed33",
@@ -18600,7 +18883,9 @@
         "acropolisVm": true,
         "runningOnNdfs": true,
         "controllerVm": false,
-        "vdisk_names": []
+        "vdisk_names": [
+            "NFS:5:0:3100"
+        ]
     },
     {
         "vmId": "00058df6-b289-00c6-0000-000000007527::83c2ca37-2549-49c4-a714-ec429ebb6783",
@@ -18759,7 +19044,9 @@
         "acropolisVm": true,
         "runningOnNdfs": true,
         "controllerVm": false,
-        "vdisk_names": []
+        "vdisk_names": [
+            "NFS:3:0:6537"
+        ]
     },
     {
         "vmId": "00058df6-b289-00c6-0000-000000007527::839c43c9-9f90-4700-b20a-08943bd60d76",
@@ -18923,7 +19210,10 @@
         "acropolisVm": true,
         "runningOnNdfs": true,
         "controllerVm": false,
-        "vdisk_names": []
+        "vdisk_names": [
+            "NFS:5:0:3457",
+            "NFS:5:0:3447"
+        ]
     },
     {
         "vmId": "00058df6-b289-00c6-0000-000000007527::e5690a7a-912c-4438-bb89-0f2c8c94db24",
@@ -19087,7 +19377,10 @@
         "acropolisVm": true,
         "runningOnNdfs": true,
         "controllerVm": false,
-        "vdisk_names": []
+        "vdisk_names": [
+            "NFS:5:0:3401",
+            "NFS:5:0:3369"
+        ]
     },
     {
         "vmId": "00058df6-b289-00c6-0000-000000007527::738d74b6-6443-4bc9-9e94-42865245c182",
@@ -19253,7 +19546,9 @@
         "acropolisVm": true,
         "runningOnNdfs": true,
         "controllerVm": false,
-        "vdisk_names": []
+        "vdisk_names": [
+            "NFS:3:0:1625"
+        ]
     },
     {
         "vmId": "00058df6-b289-00c6-0000-000000007527::61d787bd-a3db-4f6b-a34d-6d52c19dada6",
@@ -19436,7 +19731,13 @@
         "acropolisVm": true,
         "runningOnNdfs": true,
         "controllerVm": false,
-        "vdisk_names": []
+        "vdisk_names": [
+            "NFS:5:0:367",
+            "NFS:5:0:366",
+            "NFS:5:0:368",
+            "NFS:5:0:369",
+            "NFS:5:0:364"
+        ]
     },
     {
         "vmId": "00058df6-b289-00c6-0000-000000007527::13b3d440-f65e-49be-9ead-873618630330",
@@ -19600,7 +19901,10 @@
         "acropolisVm": true,
         "runningOnNdfs": true,
         "controllerVm": false,
-        "vdisk_names": []
+        "vdisk_names": [
+            "NFS:5:0:3434",
+            "NFS:5:0:3438"
+        ]
     },
     {
         "vmId": "00058df6-b289-00c6-0000-000000007527::18e0ba90-f310-456a-8964-db1410fe7aad",
@@ -19758,7 +20062,9 @@
         "acropolisVm": true,
         "runningOnNdfs": true,
         "controllerVm": false,
-        "vdisk_names": []
+        "vdisk_names": [
+            "NFS:5:0:1517"
+        ]
     },
     {
         "vmId": "00058df6-b289-00c6-0000-000000007527::db363b91-272d-4a2b-899b-0f393321d041",
@@ -19921,7 +20227,9 @@
         "acropolisVm": true,
         "runningOnNdfs": true,
         "controllerVm": false,
-        "vdisk_names": []
+        "vdisk_names": [
+            "NFS:5:0:3034"
+        ]
     },
     {
         "vmId": "00058df6-b289-00c6-0000-000000007527::6a384532-3f23-4700-8dfa-9ca58abb0d52",
@@ -20079,7 +20387,9 @@
         "acropolisVm": true,
         "runningOnNdfs": true,
         "controllerVm": false,
-        "vdisk_names": []
+        "vdisk_names": [
+            "NFS:5:0:1989"
+        ]
     },
     {
         "vmId": "00058df6-b289-00c6-0000-000000007527::d42c9f0a-ec90-4efe-9c32-ffb822a20a6d",
@@ -20368,7 +20678,9 @@
         "acropolisVm": true,
         "runningOnNdfs": true,
         "controllerVm": false,
-        "vdisk_names": []
+        "vdisk_names": [
+            "NFS:2:0:739"
+        ]
     },
     {
         "vmId": "00058df6-b289-00c6-0000-000000007527::9fa40bd3-0695-4e60-80b8-f2bdba22676f",
@@ -20530,7 +20842,9 @@
         "acropolisVm": true,
         "runningOnNdfs": true,
         "controllerVm": false,
-        "vdisk_names": []
+        "vdisk_names": [
+            "NFS:2:0:1007"
+        ]
     },
     {
         "vmId": "00058df6-b289-00c6-0000-000000007527::8355878b-d624-4044-a5c1-2b6a9c67c254",
@@ -20694,7 +21008,10 @@
         "acropolisVm": true,
         "runningOnNdfs": true,
         "controllerVm": false,
-        "vdisk_names": []
+        "vdisk_names": [
+            "NFS:5:0:3462",
+            "NFS:5:0:3482"
+        ]
     },
     {
         "vmId": "00058df6-b289-00c6-0000-000000007527::d0671b89-dd28-4602-92ca-36219478e4a1",
@@ -20857,7 +21174,9 @@
         "acropolisVm": true,
         "runningOnNdfs": true,
         "controllerVm": false,
-        "vdisk_names": []
+        "vdisk_names": [
+            "NFS:5:0:3068"
+        ]
     },
     {
         "vmId": "00058df6-b289-00c6-0000-000000007527::786a70f5-ea14-4a59-87b2-6d156d45d49b",
@@ -21033,7 +21352,11 @@
         "acropolisVm": true,
         "runningOnNdfs": true,
         "controllerVm": false,
-        "vdisk_names": []
+        "vdisk_names": [
+            "NFS:4:0:819",
+            "NFS:2:0:1018",
+            "NFS:4:0:817"
+        ]
     },
     {
         "vmId": "00058df6-b289-00c6-0000-000000007527::ae2805c5-8b43-49df-a7fd-3e5ec7aedef9",
@@ -21197,7 +21520,10 @@
         "acropolisVm": true,
         "runningOnNdfs": true,
         "controllerVm": false,
-        "vdisk_names": []
+        "vdisk_names": [
+            "NFS:5:0:3452",
+            "NFS:5:0:3469"
+        ]
     },
     {
         "vmId": "00058df6-b289-00c6-0000-000000007527::291d96bd-4913-4ecf-8ee1-8346ac193d95",
@@ -21361,7 +21687,10 @@
         "acropolisVm": true,
         "runningOnNdfs": true,
         "controllerVm": false,
-        "vdisk_names": []
+        "vdisk_names": [
+            "NFS:5:0:3417",
+            "NFS:5:0:3384"
+        ]
     },
     {
         "vmId": "00058df6-b289-00c6-0000-000000007527::43c66c11-9306-4431-91eb-6e82b4480e49",
@@ -21525,7 +21854,10 @@
         "acropolisVm": true,
         "runningOnNdfs": true,
         "controllerVm": false,
-        "vdisk_names": []
+        "vdisk_names": [
+            "NFS:5:0:3423",
+            "NFS:5:0:3394"
+        ]
     },
     {
         "vmId": "00058df6-b289-00c6-0000-000000007527::31149ec6-760a-4a54-8d2f-27264791d48a",
@@ -21693,7 +22025,10 @@
         "acropolisVm": true,
         "runningOnNdfs": true,
         "controllerVm": false,
-        "vdisk_names": []
+        "vdisk_names": [
+            "NFS:5:0:387",
+            "NFS:4:0:413"
+        ]
     },
     {
         "vmId": "00058df6-b289-00c6-0000-000000007527::c31be407-d6ac-47cd-a725-5d9c266615c1",
@@ -21856,7 +22191,9 @@
         "acropolisVm": true,
         "runningOnNdfs": true,
         "controllerVm": false,
-        "vdisk_names": []
+        "vdisk_names": [
+            "NFS:5:0:3198"
+        ]
     },
     {
         "vmId": "00058df6-b289-00c6-0000-000000007527::e37ab983-cdde-47ce-a399-c6e796c44fb3",
@@ -22014,7 +22351,9 @@
         "acropolisVm": true,
         "runningOnNdfs": true,
         "controllerVm": false,
-        "vdisk_names": []
+        "vdisk_names": [
+            "NFS:5:0:2888"
+        ]
     },
     {
         "vmId": "00058df6-b289-00c6-0000-000000007527::6978e925-2618-4fbe-8fac-7d9ebd11f1c5",
@@ -22190,7 +22529,11 @@
         "acropolisVm": true,
         "runningOnNdfs": true,
         "controllerVm": false,
-        "vdisk_names": []
+        "vdisk_names": [
+            "NFS:15:0:264",
+            "NFS:3:0:6224",
+            "NFS:3:0:6225"
+        ]
     },
     {
         "vmId": "00058df6-b289-00c6-0000-000000007527::52113890-fdee-4e76-a519-4016abb8abe5",
@@ -22361,7 +22704,10 @@
         "acropolisVm": true,
         "runningOnNdfs": true,
         "controllerVm": false,
-        "vdisk_names": []
+        "vdisk_names": [
+            "NFS:3:0:5837",
+            "NFS:12:0:385"
+        ]
     },
     {
         "vmId": "00058df6-b289-00c6-0000-000000007527::1554199d-89f6-40ac-b4e0-a0e0a6bf87ca",
@@ -22521,7 +22867,9 @@
         "acropolisVm": true,
         "runningOnNdfs": true,
         "controllerVm": false,
-        "vdisk_names": []
+        "vdisk_names": [
+            "NFS:5:0:3543"
+        ]
     },
     {
         "vmId": "00058df6-b289-00c6-0000-000000007527::c6b19b9c-9d8b-49a3-90f7-f163a885ec40",
@@ -22690,7 +23038,10 @@
         "acropolisVm": true,
         "runningOnNdfs": true,
         "controllerVm": false,
-        "vdisk_names": []
+        "vdisk_names": [
+            "NFS:5:0:1029",
+            "NFS:5:0:2513"
+        ]
     },
     {
         "vmId": "00058df6-b289-00c6-0000-000000007527::6e93ed58-afb8-45fe-8a57-b3a579776c91",
@@ -22866,7 +23217,11 @@
         "acropolisVm": true,
         "runningOnNdfs": true,
         "controllerVm": false,
-        "vdisk_names": []
+        "vdisk_names": [
+            "NFS:3:0:5834",
+            "NFS:12:0:383",
+            "NFS:3:0:5835"
+        ]
     },
     {
         "vmId": "00058df6-b289-00c6-0000-000000007527::5a59e601-c0a7-4698-aa1c-3285d391b3ee",
@@ -23151,7 +23506,9 @@
         "acropolisVm": true,
         "runningOnNdfs": true,
         "controllerVm": false,
-        "vdisk_names": []
+        "vdisk_names": [
+            "NFS:5:0:1435"
+        ]
     },
     {
         "vmId": "00058df6-b289-00c6-0000-000000007527::eba0fae5-156c-4624-8b71-a564b41fc481",
@@ -23315,7 +23672,10 @@
         "acropolisVm": true,
         "runningOnNdfs": true,
         "controllerVm": false,
-        "vdisk_names": []
+        "vdisk_names": [
+            "NFS:5:0:3426",
+            "NFS:5:0:3432"
+        ]
     },
     {
         "vmId": "00058df6-b289-00c6-0000-000000007527::273ac66f-f916-416a-95b6-51640feefd69",
@@ -23473,7 +23833,9 @@
         "acropolisVm": true,
         "runningOnNdfs": true,
         "controllerVm": false,
-        "vdisk_names": []
+        "vdisk_names": [
+            "NFS:5:0:682"
+        ]
     },
     {
         "vmId": "00058df6-b289-00c6-0000-000000007527::09e5df44-82ea-4c9e-b9dd-e5c612909be5",
@@ -23644,7 +24006,10 @@
         "acropolisVm": true,
         "runningOnNdfs": true,
         "controllerVm": false,
-        "vdisk_names": []
+        "vdisk_names": [
+            "NFS:4:0:512",
+            "NFS:8:0:262"
+        ]
     },
     {
         "vmId": "00058df6-b289-00c6-0000-000000007527::f94af8a6-2584-4321-9bfa-b7b3e4c5f582",
@@ -23820,7 +24185,11 @@
         "acropolisVm": true,
         "runningOnNdfs": true,
         "controllerVm": false,
-        "vdisk_names": []
+        "vdisk_names": [
+            "NFS:3:0:7660",
+            "NFS:3:0:7659",
+            "NFS:15:0:379"
+        ]
     },
     {
         "vmId": "00058df6-b289-00c6-0000-000000007527::5f51d49d-b14d-4ff2-a9ff-3058e6719851",
@@ -23980,7 +24349,9 @@
         "acropolisVm": true,
         "runningOnNdfs": true,
         "controllerVm": false,
-        "vdisk_names": []
+        "vdisk_names": [
+            "NFS:5:0:3527"
+        ]
     },
     {
         "vmId": "00058df6-b289-00c6-0000-000000007527::efb75a4e-d697-4e3b-9b1c-2b09fb9b2b5a",
@@ -24140,7 +24511,9 @@
         "acropolisVm": true,
         "runningOnNdfs": true,
         "controllerVm": false,
-        "vdisk_names": []
+        "vdisk_names": [
+            "NFS:2:0:795"
+        ]
     },
     {
         "vmId": "00058df6-b289-00c6-0000-000000007527::5e271a22-3f0c-4268-b863-0b3a04a055f6",
@@ -24302,7 +24675,9 @@
         "acropolisVm": true,
         "runningOnNdfs": true,
         "controllerVm": false,
-        "vdisk_names": []
+        "vdisk_names": [
+            "NFS:5:0:370"
+        ]
     },
     {
         "vmId": "00058df6-b289-00c6-0000-000000007527::c3ea4a4a-ec4b-4f3c-862b-76e1c6fcfa54",
@@ -24461,7 +24836,9 @@
         "acropolisVm": true,
         "runningOnNdfs": true,
         "controllerVm": false,
-        "vdisk_names": []
+        "vdisk_names": [
+            "NFS:2:0:722"
+        ]
     },
     {
         "vmId": "00058df6-b289-00c6-0000-000000007527::ff91db9e-2300-40db-873f-91582fcf75a5",
@@ -24637,7 +25014,11 @@
         "acropolisVm": true,
         "runningOnNdfs": true,
         "controllerVm": false,
-        "vdisk_names": []
+        "vdisk_names": [
+            "NFS:15:0:377",
+            "NFS:3:0:7657",
+            "NFS:3:0:7656"
+        ]
     },
     {
         "vmId": "00058df6-b289-00c6-0000-000000007527::a94f18d8-ce2a-4409-b2f8-5b903c11dee8",
@@ -24813,7 +25194,11 @@
         "acropolisVm": true,
         "runningOnNdfs": true,
         "controllerVm": false,
-        "vdisk_names": []
+        "vdisk_names": [
+            "NFS:3:0:7663",
+            "NFS:3:0:7662",
+            "NFS:15:0:381"
+        ]
     },
     {
         "vmId": "00058df6-b289-00c6-0000-000000007527::ba388ebb-5174-401b-9ae2-19fa8a93e072",
@@ -24973,7 +25358,9 @@
         "acropolisVm": true,
         "runningOnNdfs": true,
         "controllerVm": false,
-        "vdisk_names": []
+        "vdisk_names": [
+            "NFS:5:0:2586"
+        ]
     },
     {
         "vmId": "00058df6-b289-00c6-0000-000000007527::a5fb0cf5-fa21-464c-ad34-f06551eaa046",
@@ -25149,7 +25536,11 @@
         "acropolisVm": true,
         "runningOnNdfs": true,
         "controllerVm": false,
-        "vdisk_names": []
+        "vdisk_names": [
+            "NFS:3:0:8028",
+            "NFS:12:0:403",
+            "NFS:3:0:5988"
+        ]
     },
     {
         "vmId": "00058df6-b289-00c6-0000-000000007527::cba55233-3871-44f2-a0e8-9deae6d24d6b",
@@ -25325,7 +25716,11 @@
         "acropolisVm": true,
         "runningOnNdfs": true,
         "controllerVm": false,
-        "vdisk_names": []
+        "vdisk_names": [
+            "NFS:3:0:6003",
+            "NFS:3:0:6002",
+            "NFS:12:0:413"
+        ]
     },
     {
         "vmId": "00058df6-b289-00c6-0000-000000007527::8c8a87f0-1b5b-42ca-9915-336c4f6756cf",
@@ -25492,7 +25887,10 @@
         "acropolisVm": true,
         "runningOnNdfs": true,
         "controllerVm": false,
-        "vdisk_names": []
+        "vdisk_names": [
+            "NFS:2:0:1209",
+            "NFS:2:0:1208"
+        ]
     },
     {
         "vmId": "00058df6-b289-00c6-0000-000000007527::a8cd7f20-68fa-4d03-9824-79ccfaeeac32",
@@ -25652,7 +26050,9 @@
         "acropolisVm": true,
         "runningOnNdfs": true,
         "controllerVm": false,
-        "vdisk_names": []
+        "vdisk_names": [
+            "NFS:5:0:3511"
+        ]
     },
     {
         "vmId": "00058df6-b289-00c6-0000-000000007527::67c49d07-fe97-4967-94bc-9322c67aeefd",
@@ -25816,7 +26216,10 @@
         "acropolisVm": true,
         "runningOnNdfs": true,
         "controllerVm": false,
-        "vdisk_names": []
+        "vdisk_names": [
+            "NFS:5:0:3400",
+            "NFS:5:0:3425"
+        ]
     },
     {
         "vmId": "00058df6-b289-00c6-0000-000000007527::6d928b32-6bb9-45e2-abf2-4e30a2e26bcb",
@@ -25980,7 +26383,10 @@
         "acropolisVm": true,
         "runningOnNdfs": true,
         "controllerVm": false,
-        "vdisk_names": []
+        "vdisk_names": [
+            "NFS:5:0:3412",
+            "NFS:5:0:3381"
+        ]
     },
     {
         "vmId": "00058df6-b289-00c6-0000-000000007527::e49dead5-7fda-4b32-aa8d-fc0875d6eb09",
@@ -26140,7 +26546,9 @@
         "acropolisVm": true,
         "runningOnNdfs": true,
         "controllerVm": false,
-        "vdisk_names": []
+        "vdisk_names": [
+            "NFS:2:0:808"
+        ]
     },
     {
         "vmId": "00058df6-b289-00c6-0000-000000007527::1db8ed77-fa27-4442-aea0-f623b847c55b",
@@ -26307,7 +26715,10 @@
         "acropolisVm": true,
         "runningOnNdfs": true,
         "controllerVm": false,
-        "vdisk_names": []
+        "vdisk_names": [
+            "NFS:5:0:3389",
+            "NFS:5:0:3421"
+        ]
     },
     {
         "vmId": "00058df6-b289-00c6-0000-000000007527::fe1caa2a-3f31-4c7f-84ad-9dea275c0586",
@@ -26464,7 +26875,9 @@
         "acropolisVm": true,
         "runningOnNdfs": true,
         "controllerVm": false,
-        "vdisk_names": []
+        "vdisk_names": [
+            "NFS:2:0:1029"
+        ]
     },
     {
         "vmId": "00058df6-b289-00c6-0000-000000007527::d0d9e8fd-4043-4bfe-86be-3dcab698745b",
@@ -26628,6 +27041,9 @@
         "acropolisVm": true,
         "runningOnNdfs": true,
         "controllerVm": false,
-        "vdisk_names": []
+        "vdisk_names": [
+            "NFS:5:0:3442",
+            "NFS:5:0:3453"
+        ]
     }
 ]

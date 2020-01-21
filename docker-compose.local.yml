@@ -1,0 +1,43 @@
+version: '3.7'
+services:
+
+  app_gather:
+    build:
+      context: ./gather
+      dockerfile: Dockerfile
+    container_name: app_gather
+    environment:
+      NUTANIX_VIP: 10.149.11.41
+      NUTANIX_USER: nutanix
+      NUTANIX_PASS: nutanix/4u
+      TREE_SERVER: app_tree
+      INTERVAL: 60
+      DEBUG: "False"
+    volumes:
+    - ./gather/src:/src
+
+  app_tree:
+    build:
+      context: ./tree
+      dockerfile: Dockerfile
+    container_name: app_tree
+    ports:
+    - 8080:80
+    environment:
+      PORT: 80
+      DEBUG: "True"
+    volumes:
+    - ./tree/src:/src
+
+  app_image:
+    build:
+      context: ./image
+      dockerfile: Dockerfile
+    container_name: app_image
+    ports:
+    - 8081:80
+    environment:
+      PORT: 80
+      DEBUG: "True"
+    volumes:
+    - ./image/src:/src

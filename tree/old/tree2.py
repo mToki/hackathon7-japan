@@ -4,12 +4,15 @@ import datetime
 from tinydb import TinyDB, Query  
 from tinydb.storages import MemoryStorage
 
+# vdisk_config_printer
 with open('vdiskconfigprinter', 'r') as fin:
   VDISK_CONFIG_PRINTER = fin.read()
 
+# stats_tool -stats_type=vdisk_usage
 with open('statstool', 'r') as fin:
   STATS_TOOL = fin.read()
 
+# ncli vm ls --json=true
 with open('nclivmls', 'r') as fin:
   NCLI_VM_LS_JSON = fin.read()
 

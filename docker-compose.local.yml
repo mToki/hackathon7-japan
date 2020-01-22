@@ -1,6 +1,21 @@
 version: '3.7'
 services:
 
+  web:
+    build:
+      context: ./web
+      dockerfile: Dockerfile
+    container_name: web
+    ports:
+    - 80:80
+    environment:
+      PORT: 80
+      APP_SERVER: http://app_tree:80
+    volumes:
+    - ./web/html:/usr/share/nginx/html/
+    depends_on:
+    - app_tree
+
   app_gather:
     build:
       context: ./gather
@@ -8,13 +23,17 @@ services:
     container_name: app_gather
     environment:
       NUTANIX_VIP: 10.149.11.41
-      NUTANIX_USER: nutanix
-      NUTANIX_PASS: nutanix/4u
+      CVM_USER: nutanix
+      CVM_PASS: nutanix/4u
+      PRISM_USER: admin
+      PRISM_PASS: Nutanix/4u!
       TREE_SERVER: app_tree
       INTERVAL: 60
       DEBUG: "False"
     volumes:
     - ./gather/src:/src
+    depends_on:
+    - app_tree
 
   app_tree:
     build:

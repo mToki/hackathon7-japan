@@ -8,8 +8,10 @@ import traceback
 import ops
 
 NUTANIX_VIP = os.environ['NUTANIX_VIP']
-NUTANIX_USER = os.environ['NUTANIX_USER']
-NUTANIX_PASS = os.environ['NUTANIX_PASS']
+CVM_USER = os.environ['CVM_USER']
+CVM_PASS = os.environ['CVM_PASS']
+PRISM_USER = os.environ['PRISM_USER']
+PRISM_PASS = os.environ['PRISM_PASS']
 TREE_SERVER = os.environ['TREE_SERVER']
 TREE_URL = f'http://{TREE_SERVER}/api/v1/tree/'
 INTERVAL = int(os.environ['INTERVAL'])
@@ -46,7 +48,7 @@ def main():
 def get_command_result(command):
   client = paramiko.SSHClient()
   client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
-  client.connect(NUTANIX_VIP, username=NUTANIX_USER, password=NUTANIX_PASS, timeout=5.0)
+  client.connect(NUTANIX_VIP, username=CVM_USER, password=CVM_PASS, timeout=5.0)
   stdin, stdout, stderr = client.exec_command(command)
   result = stdout.read().decode()
   print_debug(result)
@@ -82,7 +84,7 @@ def handle_vms():
 
 def handle_pds():
   session = requests.Session()
-  session.auth = ('admin', 'Nutanix/4u!')
+  session.auth = (PRISM_USER, PRISM_PASS)
   session.verify = False                              
   session.headers.update({'Content-Type': 'application/json; charset=utf-8'})
   url = f'https://{NUTANIX_VIP}:9440/PrismGateway/services/rest/v2.0/protection_domains/'

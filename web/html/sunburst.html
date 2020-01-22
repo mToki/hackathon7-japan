@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Nutanix SSX</title>
+    <link  href="/static/favicon.ico" rel="icon" type="image/vnd.microsoft.icon">
+    <link  href="/static/css/bootstrap-4.3.1.min.css" rel="stylesheet" >
+    <script src="/static/js/jquery-2.2.4.min.js"></script>
+    <script src="/static/js/bootstrap-4.3.1.bundle.min.js"></script>
+    <script src="/static/js/bootstrap-4.3.1.min.js"></script>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="/static/js/ssx_sunburst.js"></script>
+    <style>
+    .link {
+      fill: none;
+      stroke: #555;
+      stroke-opacity: 0.4;
+      stroke-width: 1.5px;
+    }
+    </style>
+  </head>
+
+  <body class="container">
+    <h1>hello</h1>
+    <svg width="800" height="600"></svg>
+  <script>
+  var data = {
+    "name": "", 
+    "children": [
+      {
+        "name": "12345:5G", "size":5,
+        "children": [
+          {"name": "34567:4G", "size": 4}, {"name": "56789:3G", "size": 3}
+        ]
+      }, {
+        "name": "78901:1G", "size":1,
+        "children": [
+          {"name": "901234:3G", "size": 3}, {"name": "2345:3G", "size": 3}, {"name": "56789:5G", "size": 5}
+        ]
+      }, {
+        "name": "789012:0G",
+        "children": [
+          {"name": "901234:4G", "size": 4}, {"name": "456789:4G", "size": 4}
+        ]
+      }, {
+        "name": "67890:10G", "size":10,
+        "children": [
+          {"name": "012345:5G", "size":5}
+        ]
+      }
+
+    ]
+  };
+  draw('svg', data)
+  </script>
+  </body>
+</html>

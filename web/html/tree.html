@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Nutanix SSX</title>
+    <link  href="/static/favicon.ico" rel="icon" type="image/vnd.microsoft.icon">
+    <link  href="/static/css/bootstrap-4.3.1.min.css" rel="stylesheet" >
+    <link  href="/static/css/ssx_tree.css" rel="stylesheet" >
+    <script src="/static/js/jquery-2.2.4.min.js"></script>
+    <script src="/static/js/bootstrap-4.3.1.bundle.min.js"></script>
+    <script src="/static/js/bootstrap-4.3.1.min.js"></script>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="/static/js/ssx_tree.js"></script>
+    <style>
+    .link {
+      fill: none;
+      stroke: #555;
+      stroke-opacity: 0.4;
+      stroke-width: 1.5px;
+    }
+    </style>
+  </head>
+
+  <body class="container">
+    <h1>hello</h1>
+    <svg width="800" height="600"></svg>
+  <script>
+  var data = {
+    "name": "A",
+    "children": [
+      { "name": "100112" },
+      {
+        "name": "C",
+        "children": [{ "name": "D" }, { "name": "E" }, { "name": "F" }]
+      },
+      { "name": "G" },
+      {
+        "name": "H",
+        "children": [{ "name": "I" }, { "name": "J" }]
+      },
+      { "name": "K" }
+    ]
+  };
+  draw('svg', data)
+  </script>
+  </body>
+</html>

@@ -32,26 +32,28 @@ let draw = function(svg, data){
   // Put it all together
   g.selectAll('path')
     .data(root.descendants())
-    .enter().append('path')
+    .enter()
+    .append('path')
+    .on("click", function(d){console.log(d.data.name)})
     .attr("display", function (d) { return d.depth ? null : "none"; })
     .attr("d", arc)
     .style('stroke', '#fff')
     .style("fill", function (d) { return color((d.children ? d : d.parent).data.name); })
     .append("title")
-    .text(function(d) { return d.data.name + "\n" + d.size; });
+    .text(function(d) { return d.data.name; });
 
   g.selectAll("text")
     .data(root.descendants())
     .enter()
     .append("text")
+    .on("click", function(d){console.log(d.data.name)})
     .attr("fill", "black")
     .attr("transform", function(d) { return "translate(" + arc.centroid(d) + ")"; })
     .attr("dy", "5px")
     .attr("font", "10px")
     .attr("text-anchor", "middle")
-    .text(function(d) { return d.data.name; });
+    .text(function(d) { return d.data.name; })
 
-    
   /*
   g = d3.select(svg).append("g").attr("transform", "translate(" + width / 2 + "," + (height / 2) + ")");
 

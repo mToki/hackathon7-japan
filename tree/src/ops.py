@@ -13,6 +13,9 @@ class TreeGenerator:
     self.vm_list = []
     self.pd_list = []
 
+    self.vdisk_table = {}
+    self.vm_table = {}
+
     self.creating = False
     self.vdisk_table = None
     self.stats_table = None
@@ -116,13 +119,19 @@ class TreeGenerator:
     pd_table = db.table('pd')
     pd_table.insert_multiple(self.pd_list)
 
-    # create root of tree dict and child mapping
-    roots = {}
+    # D3JS heirarcy format
+    root = {
+      'name':'',
+      'vdisk_id':'',
+      'size':'',
+      'children': []
+    }
+    root_vdisks = []
     childs_dict = {}
     for vdisk in vdisk_table:
       vdisk_id = vdisk['vdisk_id']
       if 'parent_vdisk_id' not in vdisk:
-        roots[vdisk_id] = {}
+        root_vdisks.append(vdisk_id)
         continue
 
       parent_vdisk_id = vdisk['parent_vdisk_id']
@@ -135,16 +144,35 @@ class TreeGenerator:
     # create tree recursively
     depth = 1
     current = int(datetime.datetime.now().timestamp() * 1000 * 1000)
-    for vdisk_id, tree_node in roots.items():
-      self.add_child_tree(vdisk_id, tree_node, childs_dict, 
+    for vdisk_id in root_vdisks:
+      node = {}
+      root['children'].append(node)
+      self.add_child_tree(vdisk_id, node, childs_dict, 
         vdisk_table, stats_table, vm_table, depth, current)
 
+    # remove size0 and no child vdisk
+    self.prune(root)
+
     # update
-    self.tree = roots
+    self.tree = root
     self.vdisk_table = vdisk_table
     self.stats_table = stats_table
     self.vm_table = vm_table
     self.pd_table = pd_table
+
+  def prune(self, node):
+    alive_children = []
+    for child_node in node['children']:
+      alive = self.prune(child_node)
+      if alive:
+        alive_children.append(child_node)
+    node['children'] = alive_children
+
+    if node['size'] != 0:
+      return True
+    if len(node['children']) > 0:
+      return True
+    return False
 
 
   def add_child_tree(self, vdisk_id, node, childs_dict, 
@@ -158,17 +186,47 @@ class TreeGenerator:
       sum_user_bytes = 0
     num_descendant = 0
 
-    for child in childs_dict.get(vdisk_id, []):
-      node[child] = {}
-      (nd, sub) = self.add_child_tree(child, node[child], childs_dict,
+    node['children'] = []
+    for child_vdisk_id in childs_dict.get(vdisk_id, []):
+      child_node = {}
+      node['children'].append(child_node)
+      (nd, sub) = self.add_child_tree(child_vdisk_id, child_node, childs_dict,
         vdisk_table, stats_table, vm_table, depth+1, current)
       num_descendant += nd
       sum_user_bytes += sub
 
-    self.update_tables(vdisk_id, node, childs_dict, vdisk_table, 
-      stats_table, vm_table, depth, current, num_descendant, sum_user_bytes)
+    (size, vm_name) = self.update_tables(vdisk_id, node, childs_dict, 
+      vdisk_table, stats_table, vm_table, depth, current, 
+      num_descendant, sum_user_bytes)
+
+    node['vdisk_id'] = int(vdisk_id)
+    node['size'] = int(size)
+    node['vm_name'] = vm_name
+    size = self.get_friendly_size(node['size'])
+    if vm_name == '':
+      node['name'] = f'{vdisk_id}:{size}'
+    else:
+      node['name'] = f'{vdisk_id}:{vm_name}:{size}'
 
     return (num_descendant + 1, sum_user_bytes)
+
+  def get_friendly_size(self, bytesize):
+    def roundstr(size):
+      return str(round(size, 1))
+
+    if bytesize < 1024:
+      return str(bytesize) + 'Bytes'
+    elif bytesize < 1024 ** 2:
+      return roundstr(bytesize / 1024.0) + 'KB'
+    elif bytesize < 1024 ** 3:
+      return roundstr(bytesize / (1024.0 ** 2)) + 'MB'
+    elif bytesize < 1024 ** 4:
+      return roundstr(bytesize / (1024.0 ** 3)) + 'GB'
+    elif bytesize < 1024 ** 5:
+      return roundstr(bytesize / (1024.0 ** 4)) + 'TB'
+    else:
+      return str(bytesize) + 'Bytes'
+
 
   def update_tables(self, vdisk_id, node, childs_dict, vdisk_table, 
     stats_table, vm_table, depth, current, num_descendant, sum_user_bytes):
@@ -215,68 +273,7 @@ class TreeGenerator:
       vdisk_update['vm_power_state'] = ''
     vdisk_table.update(vdisk_update, Query().vdisk_id==vdisk_id)
 
-    '''
-    node['depth'] = depth
-    node['num_childs'] = len(childs_dict.get(vdisk_id, []))
-
-    # vdisk
-    vdisk_dict = vdisk_table.get(Query().vdisk_id==vdisk_id)
-    node['vdisk_name'] = vdisk_dict.get('vdisk_name', '')
-    node['vdisk_uuid'] = vdisk_dict.get('vdisk_uuid', '')
-    node['vdisk_size'] = vdisk_dict['vdisk_size']
-    node['parent_vdisk_id'] = vdisk_dict.get('parent_vdisk_id', '')
-    node['to_remove'] = vdisk_dict.get('to_remove', False)
-    node['is_leaf'] = vdisk_id not in childs_dict
-
-    # stats
-    
-    if stats_dict:
-      node['user_bytes'] = stats_dict.get('user_bytes', '?')
-      node['inherited_user_bytes'] = stats_dict.get('inherited_user_bytes', '?')
-    else:
-      node['user_bytes'] = '??'
-      node['inherited_user_bytes'] = '??'
-    try:
-      node['user_bytes_friendly'] = '{:,}'.format(node['user_bytes'])
-    except:
-      node['user_bytes_friendly'] = node['user_bytes']
-    try:
-      node['inherited_user_bytes_friendly'] = '{:,}'.format(node['inherited_user_bytes'])
-    except:
-      node['inherited_user_bytes_friendly'] = node['inherited_user_bytes']
-
-    # vm
-    vm_dict = vm_table.get(Query().vdisk_names.any([node['vdisk_name']]))
-    if vm_dict:
-      node['is_vm'] = True
-      node['vm_name'] = vm_dict['vmName']
-      node['vm_uuid'] = vm_dict['uuid']
-      node['vm_power_state'] = vm_dict['powerState']
-    else:
-      node['is_vm'] = False
-      node['vm_uuid'] = ''
-      node['vm_name'] = ''
-      node['vm_power_state'] = ''
-
-    # time
-    last = int(vdisk_dict['last_modification_time_usecs'])
-    node['no_modification_usec'] = current - last
-    td = datetime.timedelta(seconds=(node['no_modification_usec']/1000000))
-    node['no_modification_time'] = str(td)
-
-    # childs
-    num_descendant = 0
-    node['child_disks'] = {}
-    try:
-      user_bytes = int(node['user_bytes'])
-    except:
-      user_bytes = 0
-
-    node['num_descendant'] = num_descendant
-    node['sum_user_bytes_descendant'] = user_bytes
-    node['sum_user_bytes_descendant_friendly'] = '{:,}'.format(user_bytes)
-    '''
-
+    return (vdisk_update['user_bytes'], vdisk_update['vm_name'])
     
 
 def convert_tree(tree):

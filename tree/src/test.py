@@ -25,6 +25,14 @@ def test():
   (success, trd) = tg.create_tree()
   trd.join()
 
+  tree = tg.get_tree()
+  print(json.dumps(tree, indent=2))
+  print(len(tree['children']))
+
+  with open('test_out_tree.json', 'w') as fout:
+    fout.write(json.dumps(tree, indent=2))
+
+  '''
   (success, chains) = tg.get_vm_vdisk_chains('9c2cd24e-5346-474c-b17d-e835cb00f7c1')
   if success:
     ...
@@ -37,6 +45,7 @@ def test():
     print(json.dumps(pd_chains, indent=2))
   else:
     print(chains)
+  '''
 
 if __name__ == '__main__':
   test()

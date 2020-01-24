@@ -14,17 +14,21 @@
     <script src="/static/js/ssx_vtree.js"></script>
   </head>
 
-  <body class="container">
-    <div class="row">
-      <div class="col">
-        <svg id="svg-sunburst" width="1200" height="1200"></svg>
-      </div>
-      <div class="col">
-        <svg id="svg-vtree" width="1200" height="1200"></svg>
-      </div>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-8">
+          <h2 class="text-center">vDisk Size HeatMap</h1>
+          <svg id="svg-sunburst" width="100%"></svg>
+        </div>
+        <div class="col-4">
+          <h2 class="text-center">vDisk Layer</h1>
+          <svg id="svg-vtree" width="100%"></svg>
+        </div>
+    </div>
+  </body>
   <script>
     draw_sunburst('#svg-sunburst')
     draw_vtree('#svg-vtree', 0)
   </script>
-  </body>
 </html>

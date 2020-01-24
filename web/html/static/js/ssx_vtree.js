@@ -16,13 +16,13 @@ let draw_vtree = function(svg, vdisk_id){
 let draw_vtree2 = function(svg, data){
   d3.selectAll(svg + " > *").remove();
 
-  var margin = {top: 40, right: 90, bottom: 50, left: 90}
+  var margin = {top: 50, right: 20, bottom: 50, left: 20}
   let width = document.querySelector(svg).clientWidth;
-  let height = document.querySelector(svg).clientHeight;
-    
+  //let height = document.querySelector(svg).clientHeight;
+  let height = width
+
   // declares a tree layout and assigns the size
-  var treemap = d3.tree()
-      .size([300, 300]);
+  var treemap = d3.tree().size([width - 40, height - 100]);
 
   //  assigns the data to a hierarchy using parent-child relationships
   var nodes = d3.hierarchy(data);

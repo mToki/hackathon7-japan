@@ -209,7 +209,6 @@ class TreeGenerator:
         'children':[]
         })
 
-
     # update
     self.tree = root
     self.vdisk_table = vdisk_table
@@ -218,6 +217,9 @@ class TreeGenerator:
     self.pd_table = pd_table
 
   def prune(self, node, depth, source_cluster_dict):
+    if depth > 5:
+      return False
+
     alive_children = []
     for child_node in node['children']:
       alive = self.prune(child_node, depth+1, source_cluster_dict)

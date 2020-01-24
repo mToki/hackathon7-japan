@@ -11,7 +11,8 @@ let draw_sunburst = function(svg){
 
 let draw_sunburst2 = function(svg, data){
   let width = document.querySelector(svg).clientWidth;
-  let height = document.querySelector(svg).clientHeight;
+  //let height = document.querySelector(svg).clientHeight;
+  let height = width
   var radius = Math.min(width, height) / 2;
   var color = d3.scaleOrdinal().range([
     "#1f77b4", "#ff7f0e", "#2ca02c", "#d62728", "#9467bd", 
@@ -20,6 +21,9 @@ let draw_sunburst2 = function(svg, data){
 
   // Create primary <g> element
   var g = d3.select(svg)
+      .on("click", function(d){
+        console.log('clicked white space')
+      })
       .attr('width', width)
       .attr('height', height)
       .append('g')
@@ -47,6 +51,7 @@ let draw_sunburst2 = function(svg, data){
     .enter()
     .append('path')
     .on("click", function(d){
+      d3.event.stopPropagation();
       draw_vtree('#svg-vtree', d.data.vdisk_id)
       console.log(d.data.name)
     })
@@ -61,9 +66,6 @@ let draw_sunburst2 = function(svg, data){
     .data(root.descendants())
     .enter()
     .append("text")
-    .on("click", function(d){
-      console.log(d.data.name)
-    })
     .attr("fill", "black")
     .attr("transform", function(d) { return "translate(" + arc.centroid(d) + ")"; })
     .attr("dy", "5px")

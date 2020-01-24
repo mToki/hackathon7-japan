@@ -1,9 +1,21 @@
-let draw = function(svg, data){
+let draw_sunburst = function(svg){
+  $.ajax({type:'get', url:'/api/v1/tree/',
+    success:function(j, status, xhr){
+      draw_sunburst2(svg, j)
+    }, 
+    error:function(d){
+
+    }
+  })
+}
+
+let draw_sunburst2 = function(svg, data){
   let width = document.querySelector(svg).clientWidth;
   let height = document.querySelector(svg).clientHeight;
   var radius = Math.min(width, height) / 2;
   var color = d3.scaleOrdinal().range([
-    "#1f77b4", "#ff7f0e", "#2ca02c", "#d62728", "#9467bd", "#8c564b", "#e377c2", "#7f7f7f", "#bcbd22", "#17becf"
+    "#1f77b4", "#ff7f0e", "#2ca02c", "#d62728", "#9467bd", 
+    "#8c564b", "#e377c2", "#7f7f7f", "#bcbd22", "#17becf"
   ]);
 
   // Create primary <g> element
@@ -34,7 +46,10 @@ let draw = function(svg, data){
     .data(root.descendants())
     .enter()
     .append('path')
-    .on("click", function(d){console.log(d.data.name)})
+    .on("click", function(d){
+      draw_vtree('#svg-vtree', d.data.vdisk_id)
+      console.log(d.data.name)
+    })
     .attr("display", function (d) { return d.depth ? null : "none"; })
     .attr("d", arc)
     .style('stroke', '#fff')
@@ -46,13 +61,31 @@ let draw = function(svg, data){
     .data(root.descendants())
     .enter()
     .append("text")
-    .on("click", function(d){console.log(d.data.name)})
+    .on("click", function(d){
+      console.log(d.data.name)
+    })
     .attr("fill", "black")
     .attr("transform", function(d) { return "translate(" + arc.centroid(d) + ")"; })
     .attr("dy", "5px")
     .attr("font", "10px")
     .attr("text-anchor", "middle")
-    .text(function(d) { return d.data.name; })
+    .text(function(d) { 
+      //return d.data.name;
+      /*
+      if(d.data.vm_name != ''){
+        return d.data.name
+      }
+      */
+      /*
+      if(d.data.source_cluster != ''){
+        return d.data.name
+      }
+      if(d.data.size > 10 * 1000 * 1000 * 1000){
+        return d.data.name
+      }
+      */
+      return ''
+    })
 
   /*
   g = d3.select(svg).append("g").attr("transform", "translate(" + width / 2 + "," + (height / 2) + ")");

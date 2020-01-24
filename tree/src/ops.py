@@ -12,15 +12,19 @@ class TreeGenerator:
     self.stats_list = []
     self.vm_list = []
     self.pd_list = []
+    self.rs_list = []
 
-    self.vdisk_table = {}
-    self.vm_table = {}
+    self.vdisk_dict = {}
+    self.vm_dict = {}
+    self.pd_dict = {}
+    self.rs_dict = {}
 
     self.creating = False
     self.vdisk_table = None
     self.stats_table = None
     self.vm_table = None
     self.pd_table = None
+    self.rs_table = None
     self.tree = {}
 
   def get_tree(self):
@@ -49,6 +53,44 @@ class TreeGenerator:
 
     return (True, pd_vm_chains)
 
+  def get_vdisk_hierarchy(self, vdisk_id):
+    try:
+      if self.vdisk_table is None:
+        return (False, 'vdisk_table is not ready')
+
+      vdisk_stack = []
+      while True:
+        vdisk_dict = self.vdisk_table.get(Query().vdisk_id==vdisk_id)
+        if vdisk_dict is None:
+          return (False, f'unable to find vdisk_uuid:{vdisk_id}')
+        vdisk_stack.append(vdisk_dict)
+        parent_id = vdisk_dict.get('parent_vdisk_id', '')
+        if parent_id == '':
+          break
+        vdisk_id = parent_id
+
+      vdisk_hierarcy = {}
+      d = vdisk_hierarcy
+      while len(vdisk_stack) != 0:
+        vdisk_dict = vdisk_stack.pop()
+        size = vdisk_dict['user_bytes']
+        fsize = self.get_friendly_size(size)
+        vm_name = vdisk_dict['vm_name']
+        if vm_name != '':
+          d['name'] = f'{vdisk_dict["vdisk_id"]}:{vm_name}:{fsize}'
+        else:
+          d['name'] = f'{vdisk_dict["vdisk_id"]}:{fsize}'
+        d['size'] = size
+        d['children'] = []
+        if len(vdisk_stack) != 0:
+          d2 = {}
+          d['children'].append(d2)
+          d = d2
+      return (True, vdisk_hierarcy)
+
+    except:
+      print(traceback.format_exc()) 
+      return (False, 'error')
 
   def get_vm_vdisk_chains(self, vm_uuid):
     if self.vdisk_table is None:
@@ -124,6 +166,8 @@ class TreeGenerator:
       'name':'',
       'vdisk_id':'',
       'size':'',
+      'to_remove':False,
+      'source_cluster':'',
       'children': []
     }
     root_vdisks = []
@@ -151,7 +195,20 @@ class TreeGenerator:
         vdisk_table, stats_table, vm_table, depth, current)
 
     # remove size0 and no child vdisk
-    self.prune(root)
+    source_cluster_dict = {}
+    self.prune(root, 1, source_cluster_dict)
+    #print(json.dumps(source_cluster_dict, indent=2))
+    for source_cluster, size in source_cluster_dict.items():
+      root['children'].append({
+        'name' : f'BACKUP_FROM:{source_cluster}:{self.get_friendly_size(size)}',
+        'vdisk_id' : '',
+        'size' : size,
+        'vm_name' : '',
+        'to_remove': False,
+        'source_cluster' : str(source_cluster),
+        'children':[]
+        })
+
 
     # update
     self.tree = root
@@ -160,14 +217,22 @@ class TreeGenerator:
     self.vm_table = vm_table
     self.pd_table = pd_table
 
-  def prune(self, node):
+  def prune(self, node, depth, source_cluster_dict):
     alive_children = []
     for child_node in node['children']:
-      alive = self.prune(child_node)
+      alive = self.prune(child_node, depth+1, source_cluster_dict)
       if alive:
         alive_children.append(child_node)
     node['children'] = alive_children
 
+    if node['to_remove'] and len(node['children']) == 0:
+      return False
+
+    source_cluster = node['source_cluster']
+    if source_cluster != '':
+      sum_size = source_cluster_dict.get(source_cluster, 0)
+      source_cluster_dict[source_cluster] = sum_size + node['size']
+      return False
     if node['size'] != 0:
       return True
     if len(node['children']) > 0:
@@ -195,13 +260,15 @@ class TreeGenerator:
       num_descendant += nd
       sum_user_bytes += sub
 
-    (size, vm_name) = self.update_tables(vdisk_id, node, childs_dict, 
+    (size, vm_name, to_remove, source_cluster) = self.update_tables(vdisk_id, node, childs_dict, 
       vdisk_table, stats_table, vm_table, depth, current, 
       num_descendant, sum_user_bytes)
 
     node['vdisk_id'] = int(vdisk_id)
     node['size'] = int(size)
     node['vm_name'] = vm_name
+    node['source_cluster'] = source_cluster
+    node['to_remove'] = to_remove
     size = self.get_friendly_size(node['size'])
     if vm_name == '':
       node['name'] = f'{vdisk_id}:{size}'
@@ -243,6 +310,9 @@ class TreeGenerator:
       'parent_vdisk_id': vdisk_original.get('parent_vdisk_id', ''),
       'to_remove': vdisk_original.get('to_remove', False),
       'is_leaf': vdisk_id not in childs_dict,
+      'originating_cluster_id':vdisk_original.get('originating_cluster_id', ''),
+      'originating_cluster_incarnation_id':vdisk_original.get('originating_cluster_incarnation_id', ''),
+      'originating_vdisk_id':vdisk_original.get('originating_vdisk_id', ''),
 
       # new
       'depth': depth,
@@ -273,7 +343,8 @@ class TreeGenerator:
       vdisk_update['vm_power_state'] = ''
     vdisk_table.update(vdisk_update, Query().vdisk_id==vdisk_id)
 
-    return (vdisk_update['user_bytes'], vdisk_update['vm_name'])
+    return (vdisk_update['user_bytes'], vdisk_update['vm_name'],
+      vdisk_update['to_remove'], vdisk_update['originating_cluster_id'])
     
 
 def convert_tree(tree):

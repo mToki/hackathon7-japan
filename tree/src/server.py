@@ -25,6 +25,14 @@ def tree():
     fdict = {'GET':get, 'POST':post}
     return fdict[request.method]()
 
+@app.route('/api/v1/tree/hierarchy/vdisks/<vdisk_id>', methods=['GET'])
+def hierarchy_vdisk(vdisk_id):
+    (success, hierarchy) = TG.get_vdisk_hierarchy(int(vdisk_id))
+    if success:
+        return (jsonify(hierarchy), 200)
+    else:
+        return (jsonify({}), 400)
+
 @app.route('/api/v1/tree/vm/<vm_uuid>', methods=['GET'])
 def tree_vm(vm_uuid):
     (success, chain) = TG.get_vm_vdisk_chains(vm_uuid)

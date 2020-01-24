@@ -16,7 +16,7 @@ with open('test_vm.json', 'r') as fin:
 with open('test_pd.json', 'r') as fin:
   pds_json = json.loads(fin.read())
 
-def test():
+def build():
   tg = ops.TreeGenerator()
   tg.set_vdisks(vdisk_json)
   tg.set_stats(stats_json)
@@ -24,28 +24,27 @@ def test():
   tg.set_pds(pds_json)
   (success, trd) = tg.create_tree()
   trd.join()
+  return tg
 
+def test_tree():
+  tg = build()
   tree = tg.get_tree()
-  print(json.dumps(tree, indent=2))
+  print()
   print(len(tree['children']))
 
   with open('test_out_tree.json', 'w') as fout:
     fout.write(json.dumps(tree, indent=2))
 
-  '''
-  (success, chains) = tg.get_vm_vdisk_chains('9c2cd24e-5346-474c-b17d-e835cb00f7c1')
-  if success:
-    ...
-    #print(json.dumps(chains, indent=2))
-  else:
-    print(chains)
+def test_stats():
+  sum = 0
+  for i in stats_json:
+    sum += i['user_bytes']
+  print('{:,}'.format(sum))
 
-  (success, pd_chains) = tg.get_pd_vdisk_chains('tttt')
-  if success:
-    print(json.dumps(pd_chains, indent=2))
-  else:
-    print(chains)
-  '''
+def test_vdisk_chain():
+  tg = build()
+  hierarcy = tg.get_vdisk_chanins(8133218)
+  print(hierarcy)
 
 if __name__ == '__main__':
-  test()
+  test_vdisk_chain()

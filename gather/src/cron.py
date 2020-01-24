@@ -96,6 +96,19 @@ def handle_pds():
   if not DEBUG:
     requests.put(TREE_URL + 'pds/', json_string)
 
+def handle_remotesites():
+  session = requests.Session()
+  session.auth = (PRISM_USER, PRISM_PASS)
+  session.verify = False                              
+  session.headers.update({'Content-Type': 'application/json; charset=utf-8'})
+  url = f'https://{NUTANIX_VIP}:9440/PrismGateway/services/rest/v2.0/remote_sites/'
+  response = session.get(url)
+  if not response.ok:
+    print('error at handle_remotesites()')
+  json_string = json.dumps(response.json()['entities'], indent=2)
+  print_debug(json_string)
+  if not DEBUG:
+    requests.put(TREE_URL + 'remotesites/', json_string)
 
 def request_building_tree():
   requests.post(TREE_URL)

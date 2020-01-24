@@ -1,3 +1,4 @@
+import copy
 import json
 import datetime
 import threading
@@ -27,8 +28,45 @@ class TreeGenerator:
     self.rs_table = None
     self.tree = {}
 
+  def prune_depth(self, node, depth, max_depth):
+    if depth > max_depth:
+      node['name'] = f'{node["vdisk_id"]}:{node["size_all"]}...'
+      node['size'] = node['size_all']
+      node['children'] = []
+      return
+    for child_node in node['children']:
+      self.prune_depth(child_node, depth+1, max_depth)
+
+  def get_node(self, node, vdisk_id):
+    if node['vdisk_id'] == vdisk_id:
+      return node
+    for child_node in node['children']:
+      result = self.get_node(child_node, vdisk_id)
+      if result is not None:
+        return result
+    return None
+
   def get_tree(self):
-    return self.tree
+    tree = copy.deepcopy(self.tree)
+    self.prune_depth(tree, 0, 3)
+    return tree
+
+  def get_tree_vdisk_id(self, vdisk_id):
+    tree = copy.deepcopy(self.tree)
+    d = {
+      'name':'',
+      'vdisk_id':'',
+      'size':0,
+      'size_all':0,
+      'to_remove':False,
+      'source_cluster':'',
+      'children': []
+    }
+    node = self.get_node(tree, vdisk_id)
+    if node is not None:
+      d['children'].append(node)
+      d['name'] = self.get_friendly_size(node['size_all'])
+    return d
 
   def get_pd_vdisk_chains(self, pd_name):
     if self.pd_table is None:
@@ -163,9 +201,10 @@ class TreeGenerator:
 
     # D3JS heirarcy format
     root = {
-      'name':'',
+      'name':'dummy',
       'vdisk_id':'',
-      'size':'',
+      'size':0,
+      'size_all':0,
       'to_remove':False,
       'source_cluster':'',
       'children': []
@@ -197,17 +236,6 @@ class TreeGenerator:
     # remove size0 and no child vdisk
     source_cluster_dict = {}
     self.prune(root, 1, source_cluster_dict)
-    #print(json.dumps(source_cluster_dict, indent=2))
-    for source_cluster, size in source_cluster_dict.items():
-      root['children'].append({
-        'name' : f'BACKUP_FROM:{source_cluster}:{self.get_friendly_size(size)}',
-        'vdisk_id' : '',
-        'size' : size,
-        'vm_name' : '',
-        'to_remove': False,
-        'source_cluster' : str(source_cluster),
-        'children':[]
-        })
 
     # update
     self.tree = root
@@ -217,8 +245,10 @@ class TreeGenerator:
     self.pd_table = pd_table
 
   def prune(self, node, depth, source_cluster_dict):
+    '''
     if depth > 5:
       return False
+    '''
 
     alive_children = []
     for child_node in node['children']:
@@ -234,7 +264,7 @@ class TreeGenerator:
     if source_cluster != '':
       sum_size = source_cluster_dict.get(source_cluster, 0)
       source_cluster_dict[source_cluster] = sum_size + node['size']
-      return False
+
     if node['size'] != 0:
       return True
     if len(node['children']) > 0:
@@ -268,6 +298,7 @@ class TreeGenerator:
 
     node['vdisk_id'] = int(vdisk_id)
     node['size'] = int(size)
+    node['size_all'] = sum_user_bytes
     node['vm_name'] = vm_name
     node['source_cluster'] = source_cluster
     node['to_remove'] = to_remove

@@ -2,7 +2,7 @@ let draw_vtree = function(svg, vdisk_id){
   if(vdisk_id == 0){
     return
   }
-  $.ajax({type:'get', url:'/api/v1/tree/hierarchy/vdisks/' + vdisk_id,
+  $.ajax({type:'get', url:'/api/v1/tree/layer/vdisks/' + vdisk_id,
     success:function(j, status, xhr){
       draw_vtree2(svg, j)
     }, 

@@ -1,7 +1,7 @@
 let draw_sunburst = function(svg){
   $.ajax({type:'get', url:'/api/v1/tree/',
     success:function(j, status, xhr){
-      draw_sunburst2(svg, j)
+      draw_sunburst2(svg, j, false)
     }, 
     error:function(d){
 
@@ -9,7 +9,20 @@ let draw_sunburst = function(svg){
   })
 }
 
-let draw_sunburst2 = function(svg, data){
+let draw_sunburst_vdiskid = function(svg, vdisk_id){
+  $.ajax({type:'get', url:'/api/v1/tree/hierarchy/vdisks/' + vdisk_id,
+    success:function(j, status, xhr){
+      draw_sunburst2(svg, j, true)
+    }, 
+    error:function(d){
+
+    }
+  })
+}
+
+let draw_sunburst2 = function(svg, data, show_name){
+  d3.selectAll(svg + " > *").remove();
+
   let width = document.querySelector(svg).clientWidth;
   //let height = document.querySelector(svg).clientHeight;
   let height = width
@@ -23,6 +36,7 @@ let draw_sunburst2 = function(svg, data){
   var g = d3.select(svg)
       .on("click", function(d){
         console.log('clicked white space')
+        draw_sunburst(svg)
       })
       .attr('width', width)
       .attr('height', height)
@@ -53,7 +67,9 @@ let draw_sunburst2 = function(svg, data){
     .on("click", function(d){
       d3.event.stopPropagation();
       draw_vtree('#svg-vtree', d.data.vdisk_id)
+      draw_sunburst_vdiskid(svg, d.data.vdisk_id)
       console.log(d.data.name)
+      //console.log(d.data)
     })
     .attr("display", function (d) { return d.depth ? null : "none"; })
     .attr("d", arc)
@@ -72,20 +88,9 @@ let draw_sunburst2 = function(svg, data){
     .attr("font", "10px")
     .attr("text-anchor", "middle")
     .text(function(d) { 
-      //return d.data.name;
-      /*
-      if(d.data.vm_name != ''){
+      if(show_name){
         return d.data.name
       }
-      */
-      /*
-      if(d.data.source_cluster != ''){
-        return d.data.name
-      }
-      if(d.data.size > 10 * 1000 * 1000 * 1000){
-        return d.data.name
-      }
-      */
       return ''
     })
 

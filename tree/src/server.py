@@ -27,6 +27,11 @@ def tree():
 
 @app.route('/api/v1/tree/hierarchy/vdisks/<vdisk_id>', methods=['GET'])
 def hierarchy_vdisk(vdisk_id):
+    hierarchy = TG.get_tree_vdisk_id(int(vdisk_id))
+    return (jsonify(hierarchy), 200)
+
+@app.route('/api/v1/tree/layer/vdisks/<vdisk_id>', methods=['GET'])
+def layer_vdisk(vdisk_id):
     (success, hierarchy) = TG.get_vdisk_hierarchy(int(vdisk_id))
     if success:
         return (jsonify(hierarchy), 200)
